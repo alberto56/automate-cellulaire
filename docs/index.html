@@ -1,0 +1,24 @@
+---
+---
+<!doctype html>
+<html>
+  <head>
+    <title>Automate cellulaire</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p>Ce projet utilise une grille de {{ site.data.grid.cells.width }} par {{ site.data.grid.cells.height }}.</p>
+    <canvas id="myCanvas" width="{{ site.data.grid.pixels.width }}" height="{{ site.data.grid.pixels.height }}"></canvas>
+    <script src="visual.js"></script>
+    <script src="algo.js"></script>
+    <script>
+      // Créer le visuel
+      const visual = new Visual(
+        "myCanvas",
+        {{ site.data.grid.cells.width }},
+        {{ site.data.grid.cells.height }},
+      );
+      const algo = new Algo(visual);
+    </script>
+  </body>
+</html>
