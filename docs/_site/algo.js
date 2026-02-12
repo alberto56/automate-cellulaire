@@ -24,24 +24,24 @@ class Controller {
     setTimeout(() => {
       that.changeColor();
       that.changeColorSoon();
-    }, Math.random() * 4000);
+    }, Math.random() * 1000);
   }
   changeColor() {
     const color = this.cell.color;
     if (color.r > 128) {
-      color.r -= 10;
+      color.r = Math.max(color.r - 10, 128);
     } else {
-      color.r += 10;
+      color.r = Math.min(color.r + 10, 128);
     }
     if (color.g > 128) {
-      color.g -= 10;
+      color.g = Math.max(color.g - 10, 128);
     } else {
-      color.g += 10;
+      color.g = Math.min(color.g + 10, 128);
     }
     if (color.b > 128) {
-      color.b -= 10;
+      color.b = Math.max(color.b - 10, 128);
     } else {
-      color.b += 10;
+      color.b = Math.min(color.b + 10, 128);
     }
     this.cell.changeColor(color);
   }
