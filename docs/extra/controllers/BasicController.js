@@ -1,0 +1,3 @@
+class BasicController extends Controller {
+
+}

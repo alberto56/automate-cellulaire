@@ -1,0 +1,3 @@
+class BasicView extends View {
+
+}

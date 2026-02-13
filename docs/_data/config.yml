@@ -1,0 +1,10 @@
+model:
+  height: 8
+  width: 8
+  class: "BasicModel"
+view:
+  height: 500
+  width: 500
+  class: "BasicView"
+controller:
+  class: "BasicController"

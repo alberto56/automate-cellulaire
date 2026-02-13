@@ -1,5 +1,5 @@
 
-class Algo {
+class MakeMeGrey {
   constructor(visual) {
     this.visual = visual;
     this.controllers = [];
@@ -8,12 +8,12 @@ class Algo {
   start() {
     const that = this;
     this.visual.cells.forEach((cell) => {
-      this.controllers.push(new Controller(cell));
+      this.controllers.push(new CellController(cell));
     });
   }
 }
 
-class Controller {
+class CellController {
   constructor(cell) {
     this.cell = cell;
     const that = this;

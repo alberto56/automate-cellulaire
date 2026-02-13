@@ -1,5 +1,5 @@
 
-class Algo {
+class Bleed {
   constructor(visual) {
     this.visual = visual;
     this.controllers = [];
@@ -8,25 +8,28 @@ class Algo {
   start() {
     const that = this;
     this.visual.cells.forEach((cell) => {
-      this.controllers.push(new Controller(cell));
+      this.controllers.push(new CellController(cell));
     });
   }
 }
 
-class Controller {
+class CellController {
   constructor(cell) {
     this.cell = cell;
     const that = this;
-    this.changeColorSoon();
+    if (this.cell.color.r > 128) {
+      this.bleedSoon();
+    }
   }
-  changeColorSoon() {
+  bleedSoon() {
     const that = this;
     setTimeout(() => {
-      that.changeColor();
-      that.changeColorSoon();
+      that.bleed();
+      that.bleedSoon();
     }, Math.random() * 1000);
   }
-  changeColor() {
+  bleed() {
+    // our color
     const color = this.cell.color;
     if (color.r > 128) {
       color.r = Math.max(color.r - 10, 128);

@@ -1,4 +1,4 @@
-class Visual {
+class BaseView {
   constructor(canvasId, cellWidth, cellHeight) {
     this.canvas = document.getElementById(canvasId);
     this.cells = [];
@@ -11,11 +11,12 @@ class Visual {
   build() {
     for (let cellHeight = 0; cellHeight < this.cellHeight; cellHeight++) {
       for (let cellWidth = 0; cellWidth < this.cellWidth; cellWidth++) {
-        this.cells.push(new Cell(
+        const cell = this.newCell(
           this,
           cellWidth,
           cellHeight,
-        ));
+        )
+        this.cells.push(cell);
       }
     }
   }
@@ -25,6 +26,9 @@ class Visual {
       Math.floor(Math.random() * 256),
       Math.floor(Math.random() * 256),
     );
+  }
+  newCell(parent, cellWidth, cellHeight) {
+    return new Cell(parent, cellWidth, cellHeight);
   }
 }
 
@@ -46,7 +50,7 @@ class Cell {
     this.cellHeight = cellHeight;
     this.ctx = this.parent.canvas.getContext("2d");
     this.setColor(this.parent.randomColor());
-    this.ctx.fillRect(
+    this.fillShape(
       this.calcLeft(),
       this.calcTop(),
       this.calcPixelWidth(),
@@ -59,9 +63,13 @@ class Cell {
     this.ctx.fillStyle = this.color.toRgb();
   }
 
+  fillShape(left, top, width, height) {
+    this.ctx.fillRect(left, top, width, height);
+  }
+
   changeColor(color) {
     this.setColor(color);
-    this.ctx.fillRect(
+    this.fillShape(
       this.calcLeft(),
       this.calcTop(),
       this.calcPixelWidth(),
