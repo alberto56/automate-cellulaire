@@ -1,4 +1,4 @@
-class SquarePixelsWithBorder extends BaseView {
+class SquarePixelsWithBorder extends View {
   newCell(parent, cellWidth, cellHeight) {
     return new CellWithBorder(parent, cellWidth, cellHeight);
   }

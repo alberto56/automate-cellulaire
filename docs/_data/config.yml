@@ -5,6 +5,10 @@ model:
 view:
   height: 500
   width: 500
-  class: "BasicView"
+  classes:
+  - "SquarePixelsWithBorder"
 controller:
-  class: "BasicController"
+  classes:
+  - "MulticolouredController"
+  - "MakeMeGrey"
+  - "BasicController"

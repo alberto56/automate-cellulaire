@@ -1,4 +1,4 @@
-class RoundPixels extends BaseView {
+class RoundPixels extends View {
   newCell(parent, cellWidth, cellHeight) {
     return new RoundCell(parent, cellWidth, cellHeight);
   }

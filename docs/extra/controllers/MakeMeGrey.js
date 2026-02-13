@@ -1,48 +1,29 @@
 
-class MakeMeGrey {
-  constructor(visual) {
-    this.visual = visual;
-    this.controllers = [];
-    this.start();
+class MakeMeGrey extends Controller {
+  init() {
+    for (let col = 0; col < this.model.cols; col++) {
+      for (let row = 0; row < this.model.rows; row++) {
+        this.changeColorSoon(col, row);
+      }
+    }
+    return super.init();
   }
-  start() {
-    const that = this;
-    this.visual.cells.forEach((cell) => {
-      this.controllers.push(new CellController(cell));
-    });
-  }
-}
-
-class CellController {
-  constructor(cell) {
-    this.cell = cell;
-    const that = this;
-    this.changeColorSoon();
-  }
-  changeColorSoon() {
+  changeColorSoon(col, row) {
     const that = this;
     setTimeout(() => {
-      that.changeColor();
-      that.changeColorSoon();
+      that.changeColor(col, row);
+      that.changeColorSoon(col, row);
     }, Math.random() * 1000);
   }
-  changeColor() {
-    const color = this.cell.color;
-    if (color.r > 128) {
-      color.r = Math.max(color.r - 10, 128);
-    } else {
-      color.r = Math.min(color.r + 10, 128);
-    }
-    if (color.g > 128) {
-      color.g = Math.max(color.g - 10, 128);
-    } else {
-      color.g = Math.min(color.g + 10, 128);
-    }
-    if (color.b > 128) {
-      color.b = Math.max(color.b - 10, 128);
-    } else {
-      color.b = Math.min(color.b + 10, 128);
-    }
-    this.cell.changeColor(color);
+  changeColor(col, row) {
+    const that = this;
+    ['r', 'g', 'b'].forEach((color) => {
+      const value = this.model.get(col, row, color, 0);
+      if (value > 128) {
+        that.model.set(col, row, color, Math.max(value - 10, 128));
+      } else {
+        that.model.set(col, row, color, Math.min(value + 10, 128));
+      }
+    });
   }
 }

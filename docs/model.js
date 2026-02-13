@@ -85,6 +85,9 @@ class Model {
       return;
     }
     this.data[col][row][property] = value;
+    this.views.forEach((view) => {
+      view.update(col, row, property, value);
+    });
   }
   get(col, row, property, defaultIfOutOfBounds = null) {
     if (this.colRowIsOutOfBounds(col, row)) {

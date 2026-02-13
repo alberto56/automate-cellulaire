@@ -5,8 +5,8 @@
 {% assign pixelHeight = site.data.config.view.height %}
 {% assign pixelWidth = site.data.config.view.width %}
 {% assign model = site.data.config.model.class %}
-{% assign view = site.data.config.view.class %}
-{% assign controller = site.data.config.controller.class %}
+{% assign views = site.data.config.view.classes %}
+{% assign controllers = site.data.config.controller.classes %}
 <!doctype html>
 <html>
   <head>
@@ -21,13 +21,34 @@
     <script src="view.js"></script>
     <script src="controller.js"></script>
     <script src="extra/models/{{ model }}.js"></script>
+    <script>
+      const model = (new {{ model }}(
+        {{ cellHeight }},
+        {{ cellWidth }},
+      )).init();
+    </script>
+    <script>
+      let views = [];
+    </script>
+    {% for view in views %}
     <script src="extra/views/{{ view }}.js"></script>
+    <script>
+      views.push((new {{ view }}(
+        {{ pixelWidth }},
+        {{ pixelHeight }},
+        'myCanvas',
+        model,
+      )).init());
+    </script>
+    {% endfor %}
+    <script>
+      let controllers = [];
+    </script>
+    {% for controller in controllers %}
     <script src="extra/controllers/{{ controller }}.js"></script>
     <script>
-      // Créer le visuel
-      const model = (new {{ model }}({{ cellHeight }}, {{ cellWidth }})).init();
-      const view = (new {{ view }}()).init('myCanvas', model);
-      const controller = (new {{ controller }}()).init(model, view);
+      controllers.push((new {{ controller }}(model, views)).init());
     </script>
+    {% endfor %}
   </body>
 </html>
