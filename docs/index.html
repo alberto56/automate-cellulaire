@@ -47,7 +47,7 @@
     {% for controller in controllers %}
     <script src="extra/controllers/{{ controller }}.js"></script>
     <script>
-      controllers.push((new {{ controller }}(model, views)).init());
+      controllers.push((new {{ controller }}(model)).init());
     </script>
     {% endfor %}
   </body>

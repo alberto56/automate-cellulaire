@@ -1,6 +1,6 @@
 model:
-  height: 5
-  width: 5
+  height: 50
+  width: 50
   class: "BasicModel"
 view:
   height: 500
@@ -9,5 +9,4 @@ view:
   - "RoundPixels"
 controller:
   classes:
-  - "MakeMeGrey"
-  - "MulticolouredController"
+  - "GameOfLife"
