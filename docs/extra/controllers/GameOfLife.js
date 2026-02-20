@@ -8,6 +8,7 @@ class GameOfLife extends Controller {
         else {
           this.dead(col, row);
         }
+        this.reactSoon(col, row);
       }
     }
     return super.init();
@@ -23,5 +24,21 @@ class GameOfLife extends Controller {
     this.model.set(col, row, 'r', 0);
     this.model.set(col, row, 'g', 0);
     this.model.set(col, row, 'b', 0);
+  }
+  reactSoon(col, row) {
+    const that = this;
+    setTimeout(() => {
+      that.react(col, row);
+      that.reactSoon(col, row);
+    }, 1000);
+  }
+  react(col, row) {
+    const alive = this.model.get(col, row, 'alive', false);
+
+    if (alive) {
+      const neighbours = this.model.getNeighbours(col, row);
+      this.alive(neighbours.southEast.col, neighbours.southEast.row);
+      this.dead(col, row);
+    }
   }
 }
