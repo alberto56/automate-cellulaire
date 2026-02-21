@@ -102,7 +102,7 @@ class Model {
     return this.data[col][row];
   }
   colRowIsOutOfBounds(col, row) {
-    return col < 0 || col >= this.cols || row < 0 || row >= this.rows;
+    return col < 0 || col >= this.cols || row < 0 || row >= this.rows || col === undefined || row === undefined;
   }
   assertAll(col, row, expectedValue) {
     const actualValue = JSON.stringify(this.getAll(col, row));
