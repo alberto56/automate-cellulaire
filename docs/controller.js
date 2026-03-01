@@ -1,7 +1,6 @@
 class Controller {
-  constructor(model, views) {
+  constructor(model) {
     this.model = model;
-    this.views = views;
   }
   init() {
     return this;
