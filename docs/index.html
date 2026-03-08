@@ -1,4 +1,4 @@
----
+tu---
 ---
 {% assign cellHeight = site.data.config.model.height %}
 {% assign cellWidth = site.data.config.model.width %}
@@ -52,31 +52,39 @@
     
     <canvas id="myCanvas" width="{{ pixelWidth }}" height="{{ pixelHeight }}"></canvas>
 
-<!-- Ajouter ceci : -->
-<p id="stats">Cellules vivantes : <strong id="alive-count">0</strong> / {{ cellWidth | times: cellHeight }}</p>
-<canvas id="chartCanvas" width="{{ pixelWidth }}" height="150"></canvas>
+
 
     
-    
-    <script>
+    <p id="stats">Cellules vivantes : <strong id="alive-count">0</strong> / {{ cellWidth | times: cellHeight }}</p>
+<canvas id="chartCanvas" width="{{ pixelWidth }}" height="150"></canvas>
+
+<script>
   const totalCells = {{ cellHeight }} * {{ cellWidth }};
   const history = [];
   const chartCanvas = document.getElementById('chartCanvas');
   const ctx = chartCanvas.getContext('2d');
 
-  function updateStats() {
-    // Compter les cellules vivantes via le modèle
-    let alive = 0;
-    for (let row = 0; row < {{ cellHeight }}; row++) {
-      for (let col = 0; col < {{ cellWidth }}; col++) {
-        if (model.getCell(row, col)) alive++;
-      }
-    }
+  // On crée un "faux view" qui écoute chaque set() du modèle
+  let aliveCount = 0;
+  let tickTimeout = null;
 
-    document.getElementById('alive-count').textContent = alive;
-    history.push(alive);
-    drawChart();
-  }
+  model.subscribe({
+    update(col, row, property, value) {
+      // On recompte toutes les cellules vivantes après chaque série de set()
+      clearTimeout(tickTimeout);
+      tickTimeout = setTimeout(() => {
+        let alive = 0;
+        for (let col = 0; col < {{ cellWidth }}; col++) {
+          for (let row = 0; row < {{ cellHeight }}; row++) {
+            if (model.get(col, row, 'alive')) alive++;
+          }
+        }
+        document.getElementById('alive-count').textContent = alive;
+        history.push(alive);
+        drawChart();
+      }, 0);
+    }
+  });
 
   function drawChart() {
     ctx.clearRect(0, 0, chartCanvas.width, chartCanvas.height);
@@ -96,12 +104,12 @@
     ctx.lineTo(w - 5, h - pad);
     ctx.stroke();
 
-    // Labels axes
+    // Labels
     ctx.fillStyle = '#aaa';
     ctx.font = '11px monospace';
-    ctx.fillText('0', pad - 20, h - pad + 4);
-    ctx.fillText(totalCells, pad - 20, 10);
-    ctx.fillText('t', w - 10, h - pad + 4);
+    ctx.fillText('0', 2, h - pad + 4);
+    ctx.fillText(totalCells, 2, 10);
+    ctx.fillText('t →', w - 20, h - pad + 14);
 
     if (history.length < 2) return;
 
@@ -116,19 +124,9 @@
     });
     ctx.stroke();
   }
-
-  // Brancher sur le tick du modèle
-  const _originalTick = model.tick.bind(model);
-  model.tick = function() {
-    const result = _originalTick();
-    updateStats();
-    return result;
-  };
-
-  // Afficher l'état initial
-  updateStats();
 </script>
 
+    
     
     
     
