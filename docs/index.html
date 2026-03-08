@@ -48,7 +48,15 @@
     <script src="extra/controllers/{{ controller }}.js"></script>
     <script>
       controllers.push((new {{ controller }}(model)).init());
-    </script>
+    </script>=
+    
+    <canvas id="myCanvas" width="{{ pixelWidth }}" height="{{ pixelHeight }}"></canvas>
+
+<!-- Ajouter ceci : -->
+<p id="stats">Cellules vivantes : <strong id="alive-count">0</strong> / {{ cellWidth | times: cellHeight }}</p>
+<canvas id="chartCanvas" width="{{ pixelWidth }}" height="150"></canvas>
+
+    
     {% endfor %}
   </body>
 </html>
