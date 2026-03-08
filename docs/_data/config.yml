@@ -1,6 +1,6 @@
 model:
-  height: 15
-  width: 15
+  height: 100
+  width: 100
   class: "BasicModel"
 view:
   height: 500
