@@ -36,26 +36,12 @@ class GameOfLife extends Controller {
     }, 1000);
   }
   
-  
   react(col, row) {
-  const alive = this.model.get(col, row, 'alive', false);
-  const neighbours = this.model.getNeighbours(col, row);
-
-  // Étape 1 : compter les voisins vivants
-  const aliveCount = Object.values(neighbours)
-    .filter(n => n.alive === true)
-    .length;
-
-  // Étape 2 : appliquer les règles
-  if (alive) {
-    if (aliveCount === 2 || aliveCount === 3) {
-      // Survit — on ne fait rien
-    } else {
-      this.dead(col, row);  // Meurt d'isolement ou surpopulation
-    }
-  } else {
-    if (aliveCount === 3) {
-      this.alive(col, row);  // Naît
+    const alive = this.model.get(col, row, 'alive', false);
+    if (alive) {
+      const neighbours = this.model.getNeighbours(col, row);
+      this.alive(neighbours.southEast.col, neighbours.southEast.row);
+      this.dead(col, row);
     }
   }
 }
