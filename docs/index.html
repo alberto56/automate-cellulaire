@@ -1,3 +1,5 @@
+---
+---
 {% assign cellHeight = site.data.config.model.height %}
 {% assign cellWidth = site.data.config.model.width %}
 {% assign pixelHeight = site.data.config.view.height %}
@@ -15,6 +17,8 @@
     <p>Ce projet utilise une grille de {{ cellWidth }} par {{ cellHeight }}.</p>
     <p><a href="https://github.com/alberto56/automate-cellulaire">Voir le code source sur GitHub</a></p>
     <canvas id="myCanvas" width="{{ pixelWidth }}" height="{{ pixelHeight }}"></canvas>
+    <p id="stats">Cellules vivantes : <strong id="alive-count">0</strong> / {{ cellWidth | times: cellHeight }}</p>
+    <canvas id="chartCanvas" width="{{ pixelWidth }}" height="150"></canvas>
     <script src="model.js"></script>
     <script src="view.js"></script>
     <script src="controller.js"></script>
@@ -46,88 +50,61 @@
     <script src="extra/controllers/{{ controller }}.js"></script>
     <script>
       controllers.push((new {{ controller }}(model)).init());
-    </script>=
-    
-    <canvas id="myCanvas" width="{{ pixelWidth }}" height="{{ pixelHeight }}"></canvas>
-
-
-
-    
-    <p id="stats">Cellules vivantes : <strong id="alive-count">0</strong> / {{ cellWidth | times: cellHeight }}</p>
-<canvas id="chartCanvas" width="{{ pixelWidth }}" height="150"></canvas>
-
-<script>
-  const totalCells = {{ cellHeight }} * {{ cellWidth }};
-  const history = [];
-  const chartCanvas = document.getElementById('chartCanvas');
-  const ctx = chartCanvas.getContext('2d');
-
-  // On crée un "faux view" qui écoute chaque set() du modèle
-  let aliveCount = 0;
-  let tickTimeout = null;
-
-  model.subscribe({
-    update(col, row, property, value) {
-      // On recompte toutes les cellules vivantes après chaque série de set()
-      clearTimeout(tickTimeout);
-      tickTimeout = setTimeout(() => {
-        let alive = 0;
-        for (let col = 0; col < {{ cellWidth }}; col++) {
-          for (let row = 0; row < {{ cellHeight }}; row++) {
-            if (model.get(col, row, 'alive')) alive++;
-          }
-        }
-        document.getElementById('alive-count').textContent = alive;
-        history.push(alive);
-        drawChart();
-      }, 0);
-    }
-  });
-
-  function drawChart() {
-    ctx.clearRect(0, 0, chartCanvas.width, chartCanvas.height);
-    const w = chartCanvas.width;
-    const h = chartCanvas.height;
-    const pad = 30;
-
-    // Fond
-    ctx.fillStyle = '#1a1a2e';
-    ctx.fillRect(0, 0, w, h);
-
-    // Axes
-    ctx.strokeStyle = '#888';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(pad, 5); ctx.lineTo(pad, h - pad);
-    ctx.lineTo(w - 5, h - pad);
-    ctx.stroke();
-
-    // Labels
-    ctx.fillStyle = '#aaa';
-    ctx.font = '11px monospace';
-    ctx.fillText('0', 2, h - pad + 4);
-    ctx.fillText(totalCells, 2, 10);
-    ctx.fillText('t →', w - 20, h - pad + 14);
-
-    if (history.length < 2) return;
-
-    // Courbe
-    ctx.strokeStyle = '#4ade80';
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    history.forEach((val, i) => {
-      const x = pad + (i / (history.length - 1)) * (w - pad - 5);
-      const y = (h - pad) - (val / totalCells) * (h - pad - 5);
-      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
-    });
-    ctx.stroke();
-  }
-</script>
-
-    
-    
-    
-    
+    </script>
     {% endfor %}
+    <script>
+      const totalCells = {{ cellHeight }} * {{ cellWidth }};
+      const history = [];
+      const chartCanvas = document.getElementById('chartCanvas');
+      const ctx = chartCanvas.getContext('2d');
+
+      let tickTimeout = null;
+      model.subscribe({
+        update(col, row, property, value) {
+          clearTimeout(tickTimeout);
+          tickTimeout = setTimeout(() => {
+            let alive = 0;
+            for (let c = 0; c < {{ cellWidth }}; c++) {
+              for (let r = 0; r < {{ cellHeight }}; r++) {
+                if (model.get(c, r, 'alive')) alive++;
+              }
+            }
+            document.getElementById('alive-count').textContent = alive;
+            history.push(alive);
+            drawChart();
+          }, 0);
+        }
+      });
+
+      function drawChart() {
+        ctx.clearRect(0, 0, chartCanvas.width, chartCanvas.height);
+        const w = chartCanvas.width;
+        const h = chartCanvas.height;
+        const pad = 30;
+        ctx.fillStyle = '#1a1a2e';
+        ctx.fillRect(0, 0, w, h);
+        ctx.strokeStyle = '#888';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(pad, 5); ctx.lineTo(pad, h - pad);
+        ctx.lineTo(w - 5, h - pad);
+        ctx.stroke();
+        ctx.fillStyle = '#aaa';
+        ctx.font = '11px monospace';
+        ctx.fillText('0', 2, h - pad + 4);
+        ctx.fillText(totalCells, 2, 10);
+        ctx.fillText('t →', w - 20, h - pad + 14);
+        if (history.length < 2) return;
+        ctx.strokeStyle = '#4ade80';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        history.forEach((val, i) => {
+          const x = pad + (i / (history.length - 1)) * (w - pad - 5);
+          const y = (h - pad) - (val / totalCells) * (h - pad - 5);
+          i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        });
+        ctx.stroke();
+      }
+    </script>
   </body>
 </html>
