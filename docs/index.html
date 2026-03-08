@@ -58,7 +58,77 @@
 
     
     
-    
+    <script>
+  const totalCells = {{ cellHeight }} * {{ cellWidth }};
+  const history = [];
+  const chartCanvas = document.getElementById('chartCanvas');
+  const ctx = chartCanvas.getContext('2d');
+
+  function updateStats() {
+    // Compter les cellules vivantes via le modèle
+    let alive = 0;
+    for (let row = 0; row < {{ cellHeight }}; row++) {
+      for (let col = 0; col < {{ cellWidth }}; col++) {
+        if (model.getCell(row, col)) alive++;
+      }
+    }
+
+    document.getElementById('alive-count').textContent = alive;
+    history.push(alive);
+    drawChart();
+  }
+
+  function drawChart() {
+    ctx.clearRect(0, 0, chartCanvas.width, chartCanvas.height);
+    const w = chartCanvas.width;
+    const h = chartCanvas.height;
+    const pad = 30;
+
+    // Fond
+    ctx.fillStyle = '#1a1a2e';
+    ctx.fillRect(0, 0, w, h);
+
+    // Axes
+    ctx.strokeStyle = '#888';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(pad, 5); ctx.lineTo(pad, h - pad);
+    ctx.lineTo(w - 5, h - pad);
+    ctx.stroke();
+
+    // Labels axes
+    ctx.fillStyle = '#aaa';
+    ctx.font = '11px monospace';
+    ctx.fillText('0', pad - 20, h - pad + 4);
+    ctx.fillText(totalCells, pad - 20, 10);
+    ctx.fillText('t', w - 10, h - pad + 4);
+
+    if (history.length < 2) return;
+
+    // Courbe
+    ctx.strokeStyle = '#4ade80';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    history.forEach((val, i) => {
+      const x = pad + (i / (history.length - 1)) * (w - pad - 5);
+      const y = (h - pad) - (val / totalCells) * (h - pad - 5);
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    });
+    ctx.stroke();
+  }
+
+  // Brancher sur le tick du modèle
+  const _originalTick = model.tick.bind(model);
+  model.tick = function() {
+    const result = _originalTick();
+    updateStats();
+    return result;
+  };
+
+  // Afficher l'état initial
+  updateStats();
+</script>
+
     
     
     
