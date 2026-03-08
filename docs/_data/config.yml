@@ -1,6 +1,6 @@
 model:
-  height: 10
-  width: 10
+  height: 13
+  width: 13
   class: "BasicModel"
 view:
   height: 500
@@ -9,4 +9,4 @@ view:
   - "RoundPixels"
 controller:
   classes:
-  - "Cascade"
+  - "GameOfLife3"
