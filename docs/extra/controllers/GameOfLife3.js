@@ -1,35 +1,26 @@
-class GameOfLife extends Controller {
+class GameOfLife3 extends Controller {
   init() {
     for (let col = 0; col < this.model.cols; col++) {
       for (let row = 0; row < this.model.rows; row++) {
-        if (Math.random() < 0.05) {
-          this.alive(col, row);
+        if (Math.random() < 0.3) {
+          this.setAlive(col, row, true);
         } else {
-          this.dead(col, row);
+          this.setAlive(col, row, false);
         }
       }
     }
-    // Lancer la boucle principale
     setTimeout(() => this.tick(), 1000);
     return super.init();
   }
 
-  dead(col, row) {
-    this.model.set(col, row, 'alive', false);
-    this.model.set(col, row, 'r', 255);
-    this.model.set(col, row, 'g', 255);
-    this.model.set(col, row, 'b', 255);
-  }
-
-  alive(col, row) {
-    this.model.set(col, row, 'alive', true);
-    this.model.set(col, row, 'r', 0);
-    this.model.set(col, row, 'g', 0);
-    this.model.set(col, row, 'b', 0);
+  setAlive(col, row, alive) {
+    this.model.set(col, row, 'alive', alive);
+    this.model.set(col, row, 'r', alive ? 0 : 255);
+    this.model.set(col, row, 'g', alive ? 0 : 255);
+    this.model.set(col, row, 'b', alive ? 0 : 255);
   }
 
   tick() {
-    // Étape 1 : calculer le prochain état de TOUTES les cellules
     const changes = [];
 
     for (let col = 0; col < this.model.cols; col++) {
@@ -47,12 +38,10 @@ class GameOfLife extends Controller {
       }
     }
 
-    // Étape 2 : appliquer tous les changements d'un coup
     changes.forEach(({ col, row, nextAlive }) => {
-      nextAlive ? this.alive(col, row) : this.dead(col, row);
+      this.setAlive(col, row, nextAlive);
     });
 
-    // Étape 3 : recommencer au prochain tour
     setTimeout(() => this.tick(), 1000);
   }
 }
