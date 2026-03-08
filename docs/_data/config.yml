@@ -9,4 +9,4 @@ view:
   - "RoundPixels"
 controller:
   classes:
-  - "MakeMeGrey"
+  - "GameOfLife"
