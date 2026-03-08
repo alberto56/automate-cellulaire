@@ -42,6 +42,6 @@ class GameOfLife3 extends Controller {
       this.setAlive(col, row, nextAlive);
     });
 
-    setTimeout(() => this.tick(), 1000);
+    setTimeout(() => this.tick(), 300);
   }
 }
