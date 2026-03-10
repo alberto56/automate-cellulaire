@@ -1,15 +1,12 @@
 model:
-  height: 50
-  width: 50
-  class: "BasicModel"
-view:
   height: 500
   width: 500
+  class: "BasicModel"
+view:
+  height: 800
+  width: 800
   classes:
-  - "SquarePixelsWithBorder"
+  - "SquarePixels"
 controller:
   classes:
-  - class: SimpleTestGame
-    start: .1
-    speed: 1000
-  - class: ClickController
+  - class: "GameOfLife3"

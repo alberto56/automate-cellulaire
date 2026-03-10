@@ -38,9 +38,9 @@ class DiagonalMovement extends Controller {
       that.react(col, row);
     }, 1000);
   }
+  
   react(col, row) {
     const alive = this.model.get(col, row, 'alive', false);
-
     if (alive) {
       const neighbours = this.model.getNeighbours(col, row);
       this.alive(neighbours.southEast.col, neighbours.southEast.row);
