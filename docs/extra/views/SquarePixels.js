@@ -1,3 +1,3 @@
-class SquarePixels extends BaseView {
+class SquarePixels extends View {
 
 }

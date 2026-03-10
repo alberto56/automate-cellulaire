@@ -6,7 +6,10 @@ view:
   height: 500
   width: 500
   classes:
-  - "RoundPixels"
+  - "SquarePixelsWithBorder"
 controller:
   classes:
-  - "GameOfLife"
+  - class: SimpleTestGame
+    start: .1
+    speed: 1000
+  - class: ClickController

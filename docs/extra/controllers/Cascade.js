@@ -13,7 +13,7 @@ class Cascade extends Controller {
     setTimeout(() => {
       that.move(col, row);
       that.moveSoon(col, row);
-    }, 1000);
+    }, Math.random() * 1000);
   }
   move(col, row) {
     const intensity = this.model.get(col, row, 'moving', 0 );

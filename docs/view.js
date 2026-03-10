@@ -11,6 +11,19 @@ class View {
     this.model.subscribe(this);
     this.data = [];
   }
+  calcPixelWidth() {
+    const ret = this.canvasWidth / this.model.cols;
+    return ret;
+  }
+  calcPixelHeight() {
+    const ret = this.canvasHeight / this.model.rows;
+    return ret;
+  }
+  coordsToCell(x, y) {
+    const col = Math.floor(x / this.calcPixelWidth());
+    const row = Math.floor(y / this.calcPixelHeight());
+    return { col, row };
+  }
   newCell(parent, cellWidth, cellHeight) {
     return new Cell(parent, cellWidth, cellHeight);
   }
@@ -62,8 +75,8 @@ class Cell {
     this.fillShape(
       this.calcLeft(),
       this.calcTop(),
-      this.calcPixelWidth(),
-      this.calcPixelHeight(),
+      this.parent.calcPixelWidth(),
+      this.parent.calcPixelHeight(),
     );
   }
 
@@ -81,25 +94,17 @@ class Cell {
     this.fillShape(
       this.calcLeft(),
       this.calcTop(),
-      this.calcPixelWidth(),
-      this.calcPixelHeight(),
+      this.parent.calcPixelWidth(),
+      this.parent.calcPixelHeight(),
     );
   }
 
-  calcPixelWidth() {
-    const ret = this.parent.canvasWidth / this.parent.model.cols;
-    return ret;
-  }
-  calcPixelHeight() {
-    const ret = this.parent.canvasHeight / this.parent.model.rows;
-    return ret;
-  }
   calcLeft() {
-    const ret = this.col * this.calcPixelWidth();
+    const ret = this.col * this.parent.calcPixelWidth();
     return ret;
   }
   calcTop() {
-    const ret = this.row * this.calcPixelHeight();
+    const ret = this.row * this.parent.calcPixelHeight();
     return ret;
   }
 

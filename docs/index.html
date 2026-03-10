@@ -45,9 +45,9 @@
       let controllers = [];
     </script>
     {% for controller in controllers %}
-    <script src="extra/controllers/{{ controller }}.js"></script>
+    <script src="extra/controllers/{{ controller.class }}.js"></script>
     <script>
-      controllers.push((new {{ controller }}(model)).init());
+      controllers.push((new {{ controller.class }}(model, views, controllers, {{ controller | jsonify }})).init());
     </script>
     {% endfor %}
   </body>
