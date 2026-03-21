@@ -1,6 +1,7 @@
 ---
 name: Turing machine
 id: turing-machine
+permalink: /patterns/turing-machine
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

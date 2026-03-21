@@ -1,6 +1,7 @@
 ---
 name: multiple roteightors
 id: multiple-roteightors
+permalink: /patterns/multiple-roteightors
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: computational universality
 id: computational-universality
+permalink: /patterns/computational-universality
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

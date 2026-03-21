@@ -1,6 +1,7 @@
 ---
 name: hivenudger
 id: hivenudger
+permalink: /patterns/hivenudger
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

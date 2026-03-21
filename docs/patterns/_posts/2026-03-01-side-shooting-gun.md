@@ -1,6 +1,7 @@
 ---
 name: side-shooting gun
 id: side-shooting-gun
+permalink: /patterns/side-shooting-gun
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

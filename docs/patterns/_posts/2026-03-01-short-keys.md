@@ -1,6 +1,7 @@
 ---
 name: short keys
 id: short-keys
+permalink: /patterns/short-keys
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

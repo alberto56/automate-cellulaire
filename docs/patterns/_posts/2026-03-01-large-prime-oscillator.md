@@ -1,6 +1,7 @@
 ---
 name: large prime oscillator
 id: large-prime-oscillator
+permalink: /patterns/large-prime-oscillator
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

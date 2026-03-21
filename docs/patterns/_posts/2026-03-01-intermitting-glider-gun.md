@@ -1,6 +1,7 @@
 ---
 name: intermitting glider gun
 id: intermitting-glider-gun
+permalink: /patterns/intermitting-glider-gun
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

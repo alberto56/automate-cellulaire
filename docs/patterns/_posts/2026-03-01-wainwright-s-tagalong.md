@@ -1,6 +1,7 @@
 ---
 name: Wainwright's tagalong
 id: wainwright-s-tagalong
+permalink: /patterns/wainwright-s-tagalong
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

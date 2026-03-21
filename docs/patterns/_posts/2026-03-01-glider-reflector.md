@@ -1,6 +1,7 @@
 ---
 name: glider reflector
 id: glider-reflector
+permalink: /patterns/glider-reflector
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

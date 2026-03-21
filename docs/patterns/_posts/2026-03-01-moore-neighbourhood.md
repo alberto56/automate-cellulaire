@@ -1,6 +1,7 @@
 ---
 name: Moore neighbourhood
 id: moore-neighbourhood
+permalink: /patterns/moore-neighbourhood
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

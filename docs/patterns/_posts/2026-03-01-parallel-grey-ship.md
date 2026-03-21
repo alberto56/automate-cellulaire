@@ -1,6 +1,7 @@
 ---
 name: parallel grey ship
 id: parallel-grey-ship
+permalink: /patterns/parallel-grey-ship
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

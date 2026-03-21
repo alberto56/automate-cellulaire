@@ -1,6 +1,7 @@
 ---
 name: stamp collection
 id: stamp-collection
+permalink: /patterns/stamp-collection
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -10,7 +11,7 @@ description: |
   A collection of [oscillator](/patterns/oscillator)s (or perhaps other Life
   objects) in a single diagram, displaying the exhibits much like
   stamps in a stamp album.  The classic examples are by Dean Hickerson
-  (see [http://conwaylife.com/ref/DRH/stamps.html](/patterns/http://conwaylife.com/ref/drh/stamps.html)).
+  (see [http://conwaylife.com/ref/DRH/stamps.html](http://conwaylife.com/ref/drh/stamps.html)).
   Many stamp collections contain "fonts" made of single cells (which
   cleanly die) to annotate the objects or to draw boxes around them.
   For example, here is a stamp collection which shows all the ways that

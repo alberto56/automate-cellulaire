@@ -1,6 +1,7 @@
 ---
 name: half bakery
 id: half-bakery
+permalink: /patterns/half-bakery
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

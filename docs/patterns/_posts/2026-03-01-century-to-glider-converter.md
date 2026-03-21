@@ -1,6 +1,7 @@
 ---
 name: century-to-glider converter
 id: century-to-glider-converter
+permalink: /patterns/century-to-glider-converter
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

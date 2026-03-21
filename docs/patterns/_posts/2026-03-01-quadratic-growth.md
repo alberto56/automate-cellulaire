@@ -1,6 +1,7 @@
 ---
 name: quadratic growth
 id: quadratic-growth
+permalink: /patterns/quadratic-growth
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

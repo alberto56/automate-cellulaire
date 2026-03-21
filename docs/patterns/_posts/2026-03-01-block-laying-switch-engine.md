@@ -1,6 +1,7 @@
 ---
 name: block-laying switch engine
 id: block-laying-switch-engine
+permalink: /patterns/block-laying-switch-engine
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

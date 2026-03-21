@@ -1,6 +1,7 @@
 ---
 name: statorless p5
 id: statorless-p5
+permalink: /patterns/statorless-p5
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

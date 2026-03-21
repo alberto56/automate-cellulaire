@@ -1,6 +1,7 @@
 ---
 name: puff suppressor
 id: puff-suppressor
+permalink: /patterns/puff-suppressor
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

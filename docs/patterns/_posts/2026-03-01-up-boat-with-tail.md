@@ -1,6 +1,7 @@
 ---
 name: up boat with tail
 id: up-boat-with-tail
+permalink: /patterns/up-boat-with-tail
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

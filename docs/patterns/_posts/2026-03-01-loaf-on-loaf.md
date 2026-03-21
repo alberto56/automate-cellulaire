@@ -1,6 +1,7 @@
 ---
 name: loaf on loaf
 id: loaf-on-loaf
+permalink: /patterns/loaf-on-loaf
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

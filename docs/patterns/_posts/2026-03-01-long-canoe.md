@@ -1,6 +1,7 @@
 ---
 name: long canoe
 id: long-canoe
+permalink: /patterns/long-canoe
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

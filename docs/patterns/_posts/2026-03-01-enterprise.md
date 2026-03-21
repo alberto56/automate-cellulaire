@@ -1,6 +1,7 @@
 ---
 name: Enterprise
 id: enterprise
+permalink: /patterns/enterprise
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

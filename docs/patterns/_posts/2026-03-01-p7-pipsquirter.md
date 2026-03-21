@@ -1,6 +1,7 @@
 ---
 name: p7 pipsquirter
 id: p7-pipsquirter
+permalink: /patterns/p7-pipsquirter
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

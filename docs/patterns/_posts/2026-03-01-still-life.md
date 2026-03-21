@@ -1,6 +1,7 @@
 ---
 name: still life
 id: still-life
+permalink: /patterns/still-life
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

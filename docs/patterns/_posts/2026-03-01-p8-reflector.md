@@ -1,6 +1,7 @@
 ---
 name: p8 reflector
 id: p8-reflector
+permalink: /patterns/p8-reflector
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

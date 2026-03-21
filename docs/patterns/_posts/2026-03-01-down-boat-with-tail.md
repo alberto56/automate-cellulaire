@@ -1,6 +1,7 @@
 ---
 name: down boat with tail
 id: down-boat-with-tail
+permalink: /patterns/down-boat-with-tail
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: universal destructor
 id: universal-destructor
+permalink: /patterns/universal-destructor
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

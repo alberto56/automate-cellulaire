@@ -1,6 +1,7 @@
 ---
 name: space dust
 id: space-dust
+permalink: /patterns/space-dust
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

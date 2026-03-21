@@ -1,6 +1,7 @@
 ---
 name: phase change
 id: phase-change
+permalink: /patterns/phase-change
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: Beluchenko's p51
 id: beluchenko-s-p51
+permalink: /patterns/beluchenko-s-p51
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

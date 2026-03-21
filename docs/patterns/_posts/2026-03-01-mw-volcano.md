@@ -1,6 +1,7 @@
 ---
 name: MW volcano
 id: mw-volcano
+permalink: /patterns/mw-volcano
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

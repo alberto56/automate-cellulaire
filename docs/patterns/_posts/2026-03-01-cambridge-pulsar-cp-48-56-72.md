@@ -1,6 +1,7 @@
 ---
 name: Cambridge pulsar CP 48-56-72
 id: cambridge-pulsar-cp-48-56-72
+permalink: /patterns/cambridge-pulsar-cp-48-56-72
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

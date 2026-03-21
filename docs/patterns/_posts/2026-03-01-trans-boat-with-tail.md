@@ -1,6 +1,7 @@
 ---
 name: trans-boat with tail
 id: trans-boat-with-tail
+permalink: /patterns/trans-boat-with-tail
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

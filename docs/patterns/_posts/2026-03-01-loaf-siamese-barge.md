@@ -1,6 +1,7 @@
 ---
 name: loaf siamese barge
 id: loaf-siamese-barge
+permalink: /patterns/loaf-siamese-barge
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

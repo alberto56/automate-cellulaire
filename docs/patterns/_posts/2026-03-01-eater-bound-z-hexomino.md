@@ -1,6 +1,7 @@
 ---
 name: eater-bound Z-hexomino
 id: eater-bound-z-hexomino
+permalink: /patterns/eater-bound-z-hexomino
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

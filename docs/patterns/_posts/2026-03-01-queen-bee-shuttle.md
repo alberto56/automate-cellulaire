@@ -1,6 +1,7 @@
 ---
 name: queen bee shuttle
 id: queen-bee-shuttle
+permalink: /patterns/queen-bee-shuttle
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

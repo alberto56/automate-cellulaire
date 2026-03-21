@@ -1,6 +1,7 @@
 ---
 name: kickback reaction
 id: kickback-reaction
+permalink: /patterns/kickback-reaction
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: p1 telegraph
 id: p1-telegraph
+permalink: /patterns/p1-telegraph
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: moose antlers
 id: moose-antlers
+permalink: /patterns/moose-antlers
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

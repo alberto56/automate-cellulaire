@@ -1,6 +1,7 @@
 ---
 name: glider recipe
 id: glider-recipe
+permalink: /patterns/glider-recipe
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: ternary reaction
 id: ternary-reaction
+permalink: /patterns/ternary-reaction
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: catch and throw
 id: catch-and-throw
+permalink: /patterns/catch-and-throw
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

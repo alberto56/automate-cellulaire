@@ -1,6 +1,7 @@
 ---
 name: pre-pulsar spaceship
 id: pre-pulsar-spaceship
+permalink: /patterns/pre-pulsar-spaceship
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

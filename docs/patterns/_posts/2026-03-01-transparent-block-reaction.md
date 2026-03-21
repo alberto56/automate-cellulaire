@@ -1,6 +1,7 @@
 ---
 name: transparent block reaction
 id: transparent-block-reaction
+permalink: /patterns/transparent-block-reaction
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

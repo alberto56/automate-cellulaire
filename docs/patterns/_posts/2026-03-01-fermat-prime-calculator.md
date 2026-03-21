@@ -1,6 +1,7 @@
 ---
 name: Fermat prime calculator
 id: fermat-prime-calculator
+permalink: /patterns/fermat-prime-calculator
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

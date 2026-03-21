@@ -1,6 +1,7 @@
 ---
 name: out of the blue
 id: out-of-the-blue
+permalink: /patterns/out-of-the-blue
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

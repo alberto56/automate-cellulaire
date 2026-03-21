@@ -1,6 +1,7 @@
 ---
 name: Gray counter
 id: gray-counter
+permalink: /patterns/gray-counter
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

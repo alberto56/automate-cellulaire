@@ -1,6 +1,7 @@
 ---
 name: switch engine channel
 id: switch-engine-channel
+permalink: /patterns/switch-engine-channel
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

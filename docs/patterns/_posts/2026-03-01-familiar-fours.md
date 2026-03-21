@@ -1,6 +1,7 @@
 ---
 name: familiar fours
 id: familiar-fours
+permalink: /patterns/familiar-fours
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

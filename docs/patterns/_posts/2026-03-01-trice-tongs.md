@@ -1,6 +1,7 @@
 ---
 name: trice tongs
 id: trice-tongs
+permalink: /patterns/trice-tongs
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

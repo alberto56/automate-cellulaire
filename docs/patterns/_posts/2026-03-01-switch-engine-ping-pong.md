@@ -1,6 +1,7 @@
 ---
 name: switch-engine ping-pong
 id: switch-engine-ping-pong
+permalink: /patterns/switch-engine-ping-pong
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: non-destructive read
 id: non-destructive-read
+permalink: /patterns/non-destructive-read
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

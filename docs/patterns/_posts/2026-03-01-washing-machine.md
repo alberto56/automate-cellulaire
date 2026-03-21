@@ -1,6 +1,7 @@
 ---
 name: washing machine
 id: washing-machine
+permalink: /patterns/washing-machine
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

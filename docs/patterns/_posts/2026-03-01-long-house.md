@@ -1,6 +1,7 @@
 ---
 name: long house
 id: long-house
+permalink: /patterns/long-house
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

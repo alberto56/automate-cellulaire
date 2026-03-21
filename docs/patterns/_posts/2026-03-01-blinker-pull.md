@@ -1,6 +1,7 @@
 ---
 name: blinker pull
 id: blinker-pull
+permalink: /patterns/blinker-pull
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

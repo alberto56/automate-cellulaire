@@ -1,6 +1,7 @@
 ---
 name: pseudo-random glider generator
 id: pseudo-random-glider-generator
+permalink: /patterns/pseudo-random-glider-generator
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

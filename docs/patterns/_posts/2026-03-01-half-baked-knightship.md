@@ -1,6 +1,7 @@
 ---
 name: half-baked knightship
 id: half-baked-knightship
+permalink: /patterns/half-baked-knightship
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

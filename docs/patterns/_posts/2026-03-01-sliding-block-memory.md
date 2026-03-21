@@ -1,6 +1,7 @@
 ---
 name: sliding block memory
 id: sliding-block-memory
+permalink: /patterns/sliding-block-memory
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

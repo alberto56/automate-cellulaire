@@ -1,6 +1,7 @@
 ---
 name: Spaceships in Conway's Life
 id: spaceships-in-conway-s-life
+permalink: /patterns/spaceships-in-conway-s-life
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

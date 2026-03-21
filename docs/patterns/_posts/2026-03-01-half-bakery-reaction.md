@@ -1,6 +1,7 @@
 ---
 name: half-bakery reaction
 id: half-bakery-reaction
+permalink: /patterns/half-bakery-reaction
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

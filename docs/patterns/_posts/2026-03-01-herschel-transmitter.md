@@ -1,6 +1,7 @@
 ---
 name: Herschel transmitter
 id: herschel-transmitter
+permalink: /patterns/herschel-transmitter
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

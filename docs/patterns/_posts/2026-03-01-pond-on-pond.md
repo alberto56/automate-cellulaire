@@ -1,6 +1,7 @@
 ---
 name: pond on pond
 id: pond-on-pond
+permalink: /patterns/pond-on-pond
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

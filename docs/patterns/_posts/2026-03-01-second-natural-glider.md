@@ -1,6 +1,7 @@
 ---
 name: second natural glider
 id: second-natural-glider
+permalink: /patterns/second-natural-glider
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

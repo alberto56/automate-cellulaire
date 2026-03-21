@@ -1,6 +1,7 @@
 ---
 name: P-pentomino
 id: p-pentomino
+permalink: /patterns/p-pentomino
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

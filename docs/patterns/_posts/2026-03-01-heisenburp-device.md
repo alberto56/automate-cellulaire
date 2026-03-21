@@ -1,6 +1,7 @@
 ---
 name: Heisenburp device
 id: heisenburp-device
+permalink: /patterns/heisenburp-device
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

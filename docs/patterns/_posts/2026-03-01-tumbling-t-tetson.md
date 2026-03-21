@@ -1,6 +1,7 @@
 ---
 name: tumbling T-tetson
 id: tumbling-t-tetson
+permalink: /patterns/tumbling-t-tetson
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

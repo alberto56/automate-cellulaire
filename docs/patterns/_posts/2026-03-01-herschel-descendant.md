@@ -1,6 +1,7 @@
 ---
 name: Herschel descendant
 id: herschel-descendant
+permalink: /patterns/herschel-descendant
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

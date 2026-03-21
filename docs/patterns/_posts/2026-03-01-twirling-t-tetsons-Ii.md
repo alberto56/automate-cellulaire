@@ -1,6 +1,7 @@
 ---
 name: twirling T-tetsons II
 id: twirling-t-tetsons-Ii
+permalink: /patterns/twirling-t-tetsons-Ii
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

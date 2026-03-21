@@ -1,6 +1,7 @@
 ---
 name: spaceship
 id: spaceship
+permalink: /patterns/spaceship
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -13,10 +14,10 @@ description: |
   [LWSS](/patterns/lwSs), [MWSS](/patterns/mwSs) and [HWSS](/patterns/hwSs), followed by the [Coe ship](/patterns/coe-ship) which has also
   evolved multiple times from random asymmetric [soup](/patterns/soup) starting
   conditions.  See also the entries on individual spaceship speeds:
-  [c/2 spaceship](/patterns/c/2-spaceship), [c/3 spaceship](/patterns/c/3-spaceship), [c/4 spaceship](/patterns/c/4-spaceship), [c/5 spaceship](/patterns/c/5-spaceship),
-  [c/6 spaceship](/patterns/c/6-spaceship), [c/7 spaceship](/patterns/c/7-spaceship), [c/10 spaceship](/patterns/c/10-spaceship), [c/12 spaceship](/patterns/c/12-spaceship),
-  [2c/5 spaceship](/patterns/2c/5-spaceship),  [2c/7 spaceship](/patterns/2c/7-spaceship), [3c/7 spaceship](/patterns/3c/7-spaceship),
-  [(2,1)c/6 spaceship](/patterns/-2-1-c-6-spaceship), and [17c/45 spaceship](/patterns/17c/45-spaceship).
+  [c/2 spaceship](/patterns/c-2-spaceship), [c/3 spaceship](/patterns/c-3-spaceship), [c/4 spaceship](/patterns/c-4-spaceship), [c/5 spaceship](/patterns/c-5-spaceship),
+  [c/6 spaceship](/patterns/c-6-spaceship), [c/7 spaceship](/patterns/c-7-spaceship), [c/10 spaceship](/patterns/c-10-spaceship), [c/12 spaceship](/patterns/c-12-spaceship),
+  [2c/5 spaceship](/patterns/2c-5-spaceship),  [2c/7 spaceship](/patterns/2c-7-spaceship), [3c/7 spaceship](/patterns/3c-7-spaceship),
+  [(2,1)c/6 spaceship](/patterns/-2-1-c-6-spaceship), and [17c/45 spaceship](/patterns/17c-45-spaceship).
   It is known that there exist spaceships travelling in all rational
   directions and at arbitrarily slow speeds (see
   [universal constructor](/patterns/universal-constructor)).  Before 1989, however, the only known

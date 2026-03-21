@@ -1,6 +1,7 @@
 ---
 name: Fast Forward Force Field
 id: fast-forward-force-field
+permalink: /patterns/fast-forward-force-field
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

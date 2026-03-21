@@ -1,6 +1,7 @@
 ---
 name: filter stream
 id: filter-stream
+permalink: /patterns/filter-stream
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

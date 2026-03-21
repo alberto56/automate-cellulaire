@@ -1,6 +1,7 @@
 ---
 name: speed booster
 id: speed-booster
+permalink: /patterns/speed-booster
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -43,7 +44,7 @@ variants:
     The fastest speed boosters are the [telegraph](/patterns/telegraph) and [p1 telegraph](/patterns/p1-telegraph),
     which can transfer a orthogonal signal at the [speed of light](/patterns/speed-of-light),
     although their bit rate is rather slow.
-    Diagonal speed boosters have also been built using [2c/3 wire](/patterns/2c/3-wire)s or
+    Diagonal speed boosters have also been built using [2c/3 wire](/patterns/2c-3-wire)s or
     other stable components.  See [stable pseudo-Heisenburp](/patterns/stable-pseudo-heisenburp).
     The [star gate](/patterns/star-gate) seems like it can transfer a signal faster than the
     [speed of light](/patterns/speed-of-light).  The illusion is explained in

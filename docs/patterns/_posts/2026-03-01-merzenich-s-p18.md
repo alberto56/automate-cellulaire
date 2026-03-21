@@ -1,6 +1,7 @@
 ---
 name: Merzenich's p18
 id: merzenich-s-p18
+permalink: /patterns/merzenich-s-p18
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

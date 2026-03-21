@@ -1,6 +1,7 @@
 ---
 name: stabilized switch engine
 id: stabilized-switch-engine
+permalink: /patterns/stabilized-switch-engine
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

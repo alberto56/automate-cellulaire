@@ -1,6 +1,7 @@
 ---
 name: twin bees shuttle
 id: twin-bees-shuttle
+permalink: /patterns/twin-bees-shuttle
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

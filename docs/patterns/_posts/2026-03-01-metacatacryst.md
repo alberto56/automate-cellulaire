@@ -1,6 +1,7 @@
 ---
 name: metacatacryst
 id: metacatacryst
+permalink: /patterns/metacatacryst
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

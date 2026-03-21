@@ -1,6 +1,7 @@
 ---
 name: Herschel stopper
 id: herschel-stopper
+permalink: /patterns/herschel-stopper
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

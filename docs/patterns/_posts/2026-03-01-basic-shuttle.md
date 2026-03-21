@@ -1,6 +1,7 @@
 ---
 name: basic shuttle
 id: basic-shuttle
+permalink: /patterns/basic-shuttle
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: bi-block puffer
 id: bi-block-puffer
+permalink: /patterns/bi-block-puffer
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

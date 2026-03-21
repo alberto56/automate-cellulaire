@@ -1,6 +1,7 @@
 ---
 name: HW emulator
 id: hw-emulator
+permalink: /patterns/hw-emulator
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

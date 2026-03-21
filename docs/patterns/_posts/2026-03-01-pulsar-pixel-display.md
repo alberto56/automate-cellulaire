@@ -1,6 +1,7 @@
 ---
 name: Pulsar Pixel Display
 id: pulsar-pixel-display
+permalink: /patterns/pulsar-pixel-display
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

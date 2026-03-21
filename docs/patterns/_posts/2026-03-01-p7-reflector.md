@@ -1,6 +1,7 @@
 ---
 name: p7 reflector
 id: p7-reflector
+permalink: /patterns/p7-reflector
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

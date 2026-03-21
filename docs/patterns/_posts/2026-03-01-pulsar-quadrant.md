@@ -1,6 +1,7 @@
 ---
 name: pulsar quadrant
 id: pulsar-quadrant
+permalink: /patterns/pulsar-quadrant
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

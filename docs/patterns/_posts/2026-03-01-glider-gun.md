@@ -1,6 +1,7 @@
 ---
 name: glider gun
 id: glider-gun
+permalink: /patterns/glider-gun
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

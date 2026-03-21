@@ -1,6 +1,7 @@
 ---
 name: half diagonal
 id: half-diagonal
+permalink: /patterns/half-diagonal
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

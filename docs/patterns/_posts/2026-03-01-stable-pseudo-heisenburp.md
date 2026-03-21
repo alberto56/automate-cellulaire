@@ -1,6 +1,7 @@
 ---
 name: stable pseudo-Heisenburp
 id: stable-pseudo-heisenburp
+permalink: /patterns/stable-pseudo-heisenburp
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -9,7 +10,7 @@ source:
 description: |
   A multi-stage [converter](/patterns/converter) constructed by
   Dave Greene in January 2007, using a complex recipe found by Noam
-  Elkies to insert a signal into a [2c/3 wire](/patterns/2c/3-wire).  The wire's high
+  Elkies to insert a signal into a [2c/3 wire](/patterns/2c-3-wire).  The wire's high
   transmission speed allows a [signal](/patterns/signal) from a [highway robber](/patterns/highway-robber) to catch
   up to a [salvo](/patterns/salvo) of [glider](/patterns/glider)s.  Ultimately the mechanism restores the
   key glider, which was destroyed by the highway robber in the first

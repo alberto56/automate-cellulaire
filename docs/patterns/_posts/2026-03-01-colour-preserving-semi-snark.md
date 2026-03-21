@@ -1,6 +1,7 @@
 ---
 name: colour-preserving semi-Snark
 id: colour-preserving-semi-snark
+permalink: /patterns/colour-preserving-semi-snark
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

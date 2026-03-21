@@ -1,6 +1,7 @@
 ---
 name: against the grain
 id: against-the-grain
+permalink: /patterns/against-the-grain
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -11,7 +12,7 @@ description: |
   [zebra stripes](/patterns/zebra-stripes) agar, perpendicular to the stripes, and also for
   [against-the-grain grey ship](/patterns/against-the-grain-grey-ship)s.
   Below is a sample [signal](/patterns/signal), found by Hartmut Holzwart in April
-  2006, that travels against the grain at [2c/3](/patterns/2c/3).  This "negative
+  2006, that travels against the grain at [2c/3](/patterns/2c-3).  This "negative
   spaceship" travels upward and will quickly reach the edge of the
   finite patch of stabilized agar shown here. Holzwart proved in 2006 that 2c/3 is the maximum speed at which
   signals can move non-destructively against the grain through zebra

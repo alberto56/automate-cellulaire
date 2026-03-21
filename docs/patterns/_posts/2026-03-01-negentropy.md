@@ -1,6 +1,7 @@
 ---
 name: negentropy
 id: negentropy
+permalink: /patterns/negentropy
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

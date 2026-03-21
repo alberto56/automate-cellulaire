@@ -1,6 +1,7 @@
 ---
 name: titanic toroidal traveler
 id: titanic-toroidal-traveler
+permalink: /patterns/titanic-toroidal-traveler
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

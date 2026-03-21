@@ -1,6 +1,7 @@
 ---
 name: glider duplicator
 id: glider-duplicator
+permalink: /patterns/glider-duplicator
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

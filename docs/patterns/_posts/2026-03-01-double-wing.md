@@ -1,6 +1,7 @@
 ---
 name: double wing
 id: double-wing
+permalink: /patterns/double-wing
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

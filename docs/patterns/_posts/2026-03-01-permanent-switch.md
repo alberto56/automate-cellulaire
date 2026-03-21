@@ -1,6 +1,7 @@
 ---
 name: permanent switch
 id: permanent-switch
+permalink: /patterns/permanent-switch
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

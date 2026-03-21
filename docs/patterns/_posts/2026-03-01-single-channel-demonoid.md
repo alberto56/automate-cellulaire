@@ -1,6 +1,7 @@
 ---
 name: single-channel Demonoid
 id: single-channel-demonoid
+permalink: /patterns/single-channel-demonoid
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

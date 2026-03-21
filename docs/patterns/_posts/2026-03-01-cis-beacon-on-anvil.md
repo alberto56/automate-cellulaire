@@ -1,6 +1,7 @@
 ---
 name: cis-beacon on anvil
 id: cis-beacon-on-anvil
+permalink: /patterns/cis-beacon-on-anvil
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

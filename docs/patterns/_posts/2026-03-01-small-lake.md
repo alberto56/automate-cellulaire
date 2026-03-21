@@ -1,6 +1,7 @@
 ---
 name: small lake
 id: small-lake
+permalink: /patterns/small-lake
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

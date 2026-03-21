@@ -1,6 +1,7 @@
 ---
 name: with the grain
 id: with-the-grain
+permalink: /patterns/with-the-grain
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

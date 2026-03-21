@@ -1,6 +1,7 @@
 ---
 name: glide symmetric
 id: glide-symmetric
+permalink: /patterns/glide-symmetric
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

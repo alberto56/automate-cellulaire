@@ -1,6 +1,7 @@
 ---
 name: hook with tail
 id: hook-with-tail
+permalink: /patterns/hook-with-tail
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: cellular automaton
 id: cellular-automaton
+permalink: /patterns/cellular-automaton
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

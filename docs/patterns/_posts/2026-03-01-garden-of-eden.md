@@ -1,6 +1,7 @@
 ---
 name: Garden of Eden
 id: garden-of-eden
+permalink: /patterns/garden-of-eden
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

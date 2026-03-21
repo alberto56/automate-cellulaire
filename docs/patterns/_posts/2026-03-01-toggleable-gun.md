@@ -1,6 +1,7 @@
 ---
 name: toggleable gun
 id: toggleable-gun
+permalink: /patterns/toggleable-gun
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

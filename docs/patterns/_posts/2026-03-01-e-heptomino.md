@@ -1,6 +1,7 @@
 ---
 name: E-heptomino
 id: e-heptomino
+permalink: /patterns/e-heptomino
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

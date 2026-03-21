@@ -1,6 +1,7 @@
 ---
 name: J-heptomino
 id: j-heptomino
+permalink: /patterns/j-heptomino
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

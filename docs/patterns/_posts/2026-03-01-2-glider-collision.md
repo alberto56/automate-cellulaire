@@ -1,6 +1,7 @@
 ---
 name: 2-glider collision
 id: 2-glider-collision
+permalink: /patterns/2-glider-collision
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: repeat time
 id: repeat-time
+permalink: /patterns/repeat-time
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

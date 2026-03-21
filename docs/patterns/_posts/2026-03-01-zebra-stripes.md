@@ -1,6 +1,7 @@
 ---
 name: zebra stripes
 id: zebra-stripes
+permalink: /patterns/zebra-stripes
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: tub with tail
 id: tub-with-tail
+permalink: /patterns/tub-with-tail
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

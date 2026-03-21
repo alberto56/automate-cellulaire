@@ -1,6 +1,7 @@
 ---
 name: glider-producing switch engine
 id: glider-producing-switch-engine
+permalink: /patterns/glider-producing-switch-engine
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

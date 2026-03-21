@@ -1,6 +1,7 @@
 ---
 name: moving sawtooth
 id: moving-sawtooth
+permalink: /patterns/moving-sawtooth
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

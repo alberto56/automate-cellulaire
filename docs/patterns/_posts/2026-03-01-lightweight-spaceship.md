@@ -1,6 +1,7 @@
 ---
 name: lightweight spaceship
 id: lightweight-spaceship
+permalink: /patterns/lightweight-spaceship
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

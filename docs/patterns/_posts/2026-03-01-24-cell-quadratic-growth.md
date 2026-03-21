@@ -1,6 +1,7 @@
 ---
 name: 24-cell quadratic growth
 id: 24-cell-quadratic-growth
+permalink: /patterns/24-cell-quadratic-growth
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

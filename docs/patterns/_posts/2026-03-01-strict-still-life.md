@@ -1,6 +1,7 @@
 ---
 name: strict still life
 id: strict-still-life
+permalink: /patterns/strict-still-life
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -18,7 +19,7 @@ description: |
   Wainwright (8-10 bits), Dave Buckingham (11-13 bits), Peter Raynham
   (14 bits), Mark Niemiec (15-24 bits), and Simon Ekstrom and Nathaniel
   Johnston (25-32 bits).  The resulting figures are shown below; see
-  also [https://oeis.org/A019473](/patterns/https://oeis.org/a019473).  The most recent search by Nathaniel
+  also [https://oeis.org/A019473](https://oeis.org/a019473).  The most recent search by Nathaniel
   Johnston has also confirmed that the [triple pseudo](/patterns/triple-pseudo) pattern found by
   Gabriel Nivasch is the only such still life with 32 bits or less.  It
   is therefore included in the pseudo still life count and not in the

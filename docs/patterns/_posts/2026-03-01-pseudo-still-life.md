@@ -1,6 +1,7 @@
 ---
 name: pseudo still life
 id: pseudo-still-life
+permalink: /patterns/pseudo-still-life
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -48,7 +49,7 @@ description: |
   --------------
   ```
   Attribution of these counts is given in [strict still life](/patterns/strict-still-life); see
-  also [https://oeis.org/A056613](/patterns/https://oeis.org/a056613).  The unique 32-bit [triple pseudo](/patterns/triple-pseudo)
+  also [https://oeis.org/A056613](https://oeis.org/a056613).  The unique 32-bit [triple pseudo](/patterns/triple-pseudo)
   still life is included in the last count in the table.  As the number
   of bits increases, the pseudo still life count goes up exponentially
   by approximately O(2.56^n).  By comparison, the rate for

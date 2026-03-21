@@ -1,6 +1,7 @@
 ---
 name: trans-loaf with tail
 id: trans-loaf-with-tail
+permalink: /patterns/trans-loaf-with-tail
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

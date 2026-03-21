@@ -1,6 +1,7 @@
 ---
 name: penny lane
 id: penny-lane
+permalink: /patterns/penny-lane
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

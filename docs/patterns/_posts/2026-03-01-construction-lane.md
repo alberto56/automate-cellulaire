@@ -1,6 +1,7 @@
 ---
 name: construction lane
 id: construction-lane
+permalink: /patterns/construction-lane
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

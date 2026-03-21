@@ -1,6 +1,7 @@
 ---
 name: lossless elbow
 id: lossless-elbow
+permalink: /patterns/lossless-elbow
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

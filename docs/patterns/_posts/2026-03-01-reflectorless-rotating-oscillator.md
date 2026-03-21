@@ -1,6 +1,7 @@
 ---
 name: reflectorless rotating oscillator
 id: reflectorless-rotating-oscillator
+permalink: /patterns/reflectorless-rotating-oscillator
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

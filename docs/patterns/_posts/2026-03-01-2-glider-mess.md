@@ -1,6 +1,7 @@
 ---
 name: 2-glider mess
 id: 2-glider-mess
+permalink: /patterns/2-glider-mess
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

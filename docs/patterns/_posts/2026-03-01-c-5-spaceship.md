@@ -1,6 +1,7 @@
 ---
 name: c/5 spaceship
 id: c-5-spaceship
+permalink: /patterns/c-5-spaceship
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

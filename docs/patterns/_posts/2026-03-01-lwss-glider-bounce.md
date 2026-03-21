@@ -1,6 +1,7 @@
 ---
 name: LWSS-glider bounce
 id: lwss-glider-bounce
+permalink: /patterns/lwss-glider-bounce
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

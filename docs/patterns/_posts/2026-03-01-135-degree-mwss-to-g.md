@@ -1,6 +1,7 @@
 ---
 name: 135-degree MWSS-to-G
 id: 135-degree-mwss-to-g
+permalink: /patterns/135-degree-mwss-to-g
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

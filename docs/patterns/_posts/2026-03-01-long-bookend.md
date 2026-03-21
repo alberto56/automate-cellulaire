@@ -1,6 +1,7 @@
 ---
 name: long bookend
 id: long-bookend
+permalink: /patterns/long-bookend
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

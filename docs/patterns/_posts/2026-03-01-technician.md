@@ -1,6 +1,7 @@
 ---
 name: technician
 id: technician
+permalink: /patterns/technician
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: Parallel HBK
 id: parallel-hbk
+permalink: /patterns/parallel-hbk
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

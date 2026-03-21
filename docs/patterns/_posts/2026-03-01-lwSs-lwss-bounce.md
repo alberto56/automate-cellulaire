@@ -1,6 +1,7 @@
 ---
 name: LWSS-LWSS bounce
 id: lwSs-lwss-bounce
+permalink: /patterns/lwSs-lwss-bounce
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

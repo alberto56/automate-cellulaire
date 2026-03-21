@@ -1,6 +1,7 @@
 ---
 name: line-cutting reaction
 id: line-cutting-reaction
+permalink: /patterns/line-cutting-reaction
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: blasting cap
 id: blasting-cap
+permalink: /patterns/blasting-cap
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

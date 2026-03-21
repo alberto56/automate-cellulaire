@@ -1,6 +1,7 @@
 ---
 name: nonomino switch engine predecessor
 id: nonomino-switch-engine-predecessor
+permalink: /patterns/nonomino-switch-engine-predecessor
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

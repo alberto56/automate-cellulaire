@@ -1,6 +1,7 @@
 ---
 name: line-mending reaction
 id: line-mending-reaction
+permalink: /patterns/line-mending-reaction
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

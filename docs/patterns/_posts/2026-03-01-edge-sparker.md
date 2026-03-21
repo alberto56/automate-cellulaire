@@ -1,6 +1,7 @@
 ---
 name: edge sparker
 id: edge-sparker
+permalink: /patterns/edge-sparker
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

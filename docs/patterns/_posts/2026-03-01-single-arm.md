@@ -1,6 +1,7 @@
 ---
 name: single-arm
 id: single-arm
+permalink: /patterns/single-arm
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

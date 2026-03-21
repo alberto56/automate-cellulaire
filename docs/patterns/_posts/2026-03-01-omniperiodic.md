@@ -1,6 +1,7 @@
 ---
 name: omniperiodic
 id: omniperiodic
+permalink: /patterns/omniperiodic
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -21,5 +22,5 @@ description: |
   Note that if we were to allow infinite oscillators, then all
   periods are certainly possible, as any period of 14 or more can be
   obtained using a [glider](/patterns/glider) (or [LWSS](/patterns/lwSs)) stream, or an infinitely long
-  [2c/3](/patterns/2c/3) wire containing signals with the desired separation.
+  [2c/3](/patterns/2c-3) wire containing signals with the desired separation.
 ...

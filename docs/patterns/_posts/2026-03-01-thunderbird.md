@@ -1,6 +1,7 @@
 ---
 name: thunderbird
 id: thunderbird
+permalink: /patterns/thunderbird
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: pre-pre-block
 id: pre-pre-block
+permalink: /patterns/pre-pre-block
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: Herschel great-grandparent
 id: herschel-great-grandparent
+permalink: /patterns/herschel-great-grandparent
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

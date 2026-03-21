@@ -1,6 +1,7 @@
 ---
 name: chicken wire
 id: chicken-wire
+permalink: /patterns/chicken-wire
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: light bulb
 id: light-bulb
+permalink: /patterns/light-bulb
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

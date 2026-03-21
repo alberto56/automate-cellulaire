@@ -1,6 +1,7 @@
 ---
 name: signal elbow
 id: signal-elbow
+permalink: /patterns/signal-elbow
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -9,7 +10,7 @@ source:
 description: |
   A [conduit](/patterns/conduit) with  [signal](/patterns/signal) output 90 degrees from its
   input.  This term is commonly used only for signal [wire](/patterns/wire)s,
-  particularly [2c/3](/patterns/2c/3) signals.  A [Snark](/patterns/snark) could reasonably be called a
+  particularly [2c/3](/patterns/2c-3) signals.  A [Snark](/patterns/snark) could reasonably be called a
   "glider elbow", but [glider reflector](/patterns/glider-reflector) is the standard term.  A
   signal elbow with a [recovery time](/patterns/recovery-time) less than 20 ticks would enable a
   trivial proof that Conway's Life is [omniperiodic](/patterns/omniperiodic).

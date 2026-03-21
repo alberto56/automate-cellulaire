@@ -1,6 +1,7 @@
 ---
 name: (23,5)c/79 Herschel climber
 id: -23-5-c-79-herschel-climber
+permalink: /patterns/-23-5-c-79-herschel-climber
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: electric fence
 id: electric-fence
+permalink: /patterns/electric-fence
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

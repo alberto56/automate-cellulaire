@@ -1,6 +1,7 @@
 ---
 name: traffic lights extruder
 id: traffic-lights-extruder
+permalink: /patterns/traffic-lights-extruder
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

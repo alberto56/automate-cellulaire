@@ -1,6 +1,7 @@
 ---
 name: pulshuttle V
 id: pulshuttle-v
+permalink: /patterns/pulshuttle-v
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

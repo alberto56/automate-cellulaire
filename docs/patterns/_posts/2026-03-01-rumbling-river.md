@@ -1,6 +1,7 @@
 ---
 name: rumbling river
 id: rumbling-river
+permalink: /patterns/rumbling-river
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

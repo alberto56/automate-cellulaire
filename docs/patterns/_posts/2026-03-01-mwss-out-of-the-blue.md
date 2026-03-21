@@ -1,6 +1,7 @@
 ---
 name: MWSS out of the blue
 id: mwss-out-of-the-blue
+permalink: /patterns/mwss-out-of-the-blue
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

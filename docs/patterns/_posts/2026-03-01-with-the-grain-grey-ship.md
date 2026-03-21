@@ -1,6 +1,7 @@
 ---
 name: with-the-grain grey ship
 id: with-the-grain-grey-ship
+permalink: /patterns/with-the-grain-grey-ship
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

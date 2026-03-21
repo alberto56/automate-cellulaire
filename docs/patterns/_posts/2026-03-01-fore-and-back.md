@@ -1,6 +1,7 @@
 ---
 name: fore and back
 id: fore-and-back
+permalink: /patterns/fore-and-back
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: Collatz 5N+1 simulator
 id: collatz-5n-1-simulator
+permalink: /patterns/collatz-5n-1-simulator
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

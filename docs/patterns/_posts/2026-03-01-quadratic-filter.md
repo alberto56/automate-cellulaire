@@ -1,6 +1,7 @@
 ---
 name: quadratic filter
 id: quadratic-filter
+permalink: /patterns/quadratic-filter
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: Gosper glider gun
 id: gosper-glider-gun
+permalink: /patterns/gosper-glider-gun
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

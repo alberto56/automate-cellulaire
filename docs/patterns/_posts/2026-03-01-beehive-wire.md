@@ -1,6 +1,7 @@
 ---
 name: beehive wire
 id: beehive-wire
+permalink: /patterns/beehive-wire
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

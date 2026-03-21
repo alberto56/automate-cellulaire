@@ -1,6 +1,7 @@
 ---
 name: WinLifeSearch
 id: winlifesearch
+permalink: /patterns/winlifesearch
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -8,5 +9,5 @@ source:
   changes: []
 description: |
   Jason Summers' GUI version of [lifesrc](/patterns/lifesrc) for MS Windows.
-  It is available from [http://entropymine.com/jason/life/software/](/patterns/http://entropymine.com/jason/life/software/).
+  It is available from [http://entropymine.com/jason/life/software/](http://entropymine.com/jason/life/software/).
 ...

@@ -1,6 +1,7 @@
 ---
 name: Wheels, Life, and other Mathematical Amusements
 id: wheels--life--and-other-mathematical-amusements
+permalink: /patterns/wheels--life--and-other-mathematical-amusements
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

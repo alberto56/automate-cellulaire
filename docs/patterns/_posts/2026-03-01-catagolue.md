@@ -1,6 +1,7 @@
 ---
 name: Catagolue
 id: catagolue
+permalink: /patterns/catagolue
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -9,7 +10,7 @@ source:
 description: |
   An online database of objects in Conway's Game of Life and
   similar cellular automata, set up by Adam P. Goucher in 2015 at
-  [http://catagolue.appspot.com](/patterns/http://catagolue.appspot.com). It gathers data from a distributed
+  [http://catagolue.appspot.com](http://catagolue.appspot.com). It gathers data from a distributed
   search of random initial configurations and records the eventual
   decay products.  Within a year of operation it had completed a
   [census](/patterns/census) of the [ash](/patterns/ash) objects from over two trillion asymmetric 16x16

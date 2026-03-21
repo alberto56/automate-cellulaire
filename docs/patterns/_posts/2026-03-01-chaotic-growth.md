@@ -1,6 +1,7 @@
 ---
 name: chaotic growth
 id: chaotic-growth
+permalink: /patterns/chaotic-growth
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

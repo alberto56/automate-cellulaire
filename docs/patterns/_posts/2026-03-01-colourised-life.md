@@ -1,6 +1,7 @@
 ---
 name: colourised Life
 id: colourised-life
+permalink: /patterns/colourised-life
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

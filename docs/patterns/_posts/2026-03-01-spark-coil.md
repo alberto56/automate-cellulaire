@@ -1,6 +1,7 @@
 ---
 name: spark coil
 id: spark-coil
+permalink: /patterns/spark-coil
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

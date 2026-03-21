@@ -1,6 +1,7 @@
 ---
 name: p72 quasi-shuttle
 id: p72-quasi-shuttle
+permalink: /patterns/p72-quasi-shuttle
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

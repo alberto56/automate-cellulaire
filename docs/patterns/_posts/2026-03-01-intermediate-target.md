@@ -1,6 +1,7 @@
 ---
 name: intermediate target
 id: intermediate-target
+permalink: /patterns/intermediate-target
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

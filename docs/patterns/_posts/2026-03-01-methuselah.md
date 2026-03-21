@@ -1,6 +1,7 @@
 ---
 name: methuselah
 id: methuselah
+permalink: /patterns/methuselah
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

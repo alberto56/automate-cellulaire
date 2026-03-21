@@ -1,6 +1,7 @@
 ---
 name: ring of fire
 id: ring-of-fire
+permalink: /patterns/ring-of-fire
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

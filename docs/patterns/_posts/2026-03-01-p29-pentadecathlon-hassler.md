@@ -1,6 +1,7 @@
 ---
 name: p29 pentadecathlon hassler
 id: p29-pentadecathlon-hassler
+permalink: /patterns/p29-pentadecathlon-hassler
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

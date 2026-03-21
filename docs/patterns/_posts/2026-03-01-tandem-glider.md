@@ -1,6 +1,7 @@
 ---
 name: tandem glider
 id: tandem-glider
+permalink: /patterns/tandem-glider
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

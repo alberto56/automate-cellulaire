@@ -1,6 +1,7 @@
 ---
 name: tubstretcher
 id: tubstretcher
+permalink: /patterns/tubstretcher
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -32,6 +33,6 @@ variants:
     In October 2005, David Bell constructed an adjustable high-period
     diagonal c/4 [rake](/patterns/rake) that [burn](/patterns/burn)s tubstretcher wicks to create
     [glider](/patterns/glider)s, which are then turned and duplicated by [convoy](/patterns/convoy)s of
-    diagonal [c/4 spaceship](/patterns/c/4-spaceship)s to re-ignite the stabilized ends of the
+    diagonal [c/4 spaceship](/patterns/c-4-spaceship)s to re-ignite the stabilized ends of the
     same wicks.
 ...

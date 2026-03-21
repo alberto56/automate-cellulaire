@@ -1,6 +1,7 @@
 ---
 name: population
 id: population
+permalink: /patterns/population
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

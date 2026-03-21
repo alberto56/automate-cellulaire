@@ -1,6 +1,7 @@
 ---
 name: eater/block frob
 id: eater-block-frob
+permalink: /patterns/eater-block-frob
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

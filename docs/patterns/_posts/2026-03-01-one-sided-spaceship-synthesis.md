@@ -1,6 +1,7 @@
 ---
 name: one-sided spaceship synthesis
 id: one-sided-spaceship-synthesis
+permalink: /patterns/one-sided-spaceship-synthesis
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

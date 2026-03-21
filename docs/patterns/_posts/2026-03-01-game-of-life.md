@@ -1,6 +1,7 @@
 ---
 name: Game of Life
 id: game-of-life
+permalink: /patterns/game-of-life
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: two-bit spark
 id: two-bit-spark
+permalink: /patterns/two-bit-spark
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

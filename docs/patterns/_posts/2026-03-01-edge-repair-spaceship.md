@@ -1,6 +1,7 @@
 ---
 name: edge-repair spaceship
 id: edge-repair-spaceship
+permalink: /patterns/edge-repair-spaceship
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -10,7 +11,7 @@ description: |
   A [spaceship](/patterns/spaceship) which has an edge that possesses
   no [spark](/patterns/spark) and yet is able to [perturb](/patterns/perturb) things because of its ability
   to repair certain types of damage to itself.  The most useful
-  examples are the following two small p3 [c/3 spaceship](/patterns/c/3-spaceship)s.
+  examples are the following two small p3 [c/3 spaceship](/patterns/c-3-spaceship)s.
 variants:
 - pattern:
   - '..................................*.....'
@@ -36,7 +37,7 @@ variants:
   - '.............*..........'
   description: |
     In October 2000, David Bell found that a [T-tetromino](/patterns/t-tetromino) component of a
-    [c/4 spaceship](/patterns/c/4-spaceship) can also be self-repairing.  Stephen Silver noticed
+    [c/4 spaceship](/patterns/c-4-spaceship) can also be self-repairing.  Stephen Silver noticed
     that it could be used to delete beehives and, in November 2000, found
     the smallest known c/4 spaceship with this edge-repair component - in
     fact, two copies of the component.

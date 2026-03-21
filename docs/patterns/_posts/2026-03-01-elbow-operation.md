@@ -1,6 +1,7 @@
 ---
 name: elbow operation
 id: elbow-operation
+permalink: /patterns/elbow-operation
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: speed of light
 id: speed-of-light
+permalink: /patterns/speed-of-light
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

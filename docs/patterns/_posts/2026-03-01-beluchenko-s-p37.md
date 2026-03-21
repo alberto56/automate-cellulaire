@@ -1,6 +1,7 @@
 ---
 name: Beluchenko's p37
 id: beluchenko-s-p37
+permalink: /patterns/beluchenko-s-p37
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

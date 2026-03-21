@@ -1,6 +1,7 @@
 ---
 name: ship on boat
 id: ship-on-boat
+permalink: /patterns/ship-on-boat
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: quadratic sawtooth
 id: quadratic-sawtooth
+permalink: /patterns/quadratic-sawtooth
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

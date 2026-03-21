@@ -1,6 +1,7 @@
 ---
 name: novelty generator
 id: novelty-generator
+permalink: /patterns/novelty-generator
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

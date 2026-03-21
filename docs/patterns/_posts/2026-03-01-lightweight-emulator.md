@@ -1,6 +1,7 @@
 ---
 name: lightweight emulator
 id: lightweight-emulator
+permalink: /patterns/lightweight-emulator
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

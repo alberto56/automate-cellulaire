@@ -1,6 +1,7 @@
 ---
 name: gliders by the dozen
 id: gliders-by-the-dozen
+permalink: /patterns/gliders-by-the-dozen
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

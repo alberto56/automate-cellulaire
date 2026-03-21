@@ -1,6 +1,7 @@
 ---
 name: Herschel-to-glider
 id: herschel-to-glider
+permalink: /patterns/herschel-to-glider
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: p6 pipsquirter
 id: p6-pipsquirter
+permalink: /patterns/p6-pipsquirter
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

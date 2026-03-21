@@ -1,6 +1,7 @@
 ---
 name: The Online Life-Like CA Soup Search
 id: the-online-life-like-ca-soup-search
+permalink: /patterns/the-online-life-like-ca-soup-search
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

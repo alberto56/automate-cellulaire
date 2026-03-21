@@ -1,6 +1,7 @@
 ---
 name: Callahan G-to-H
 id: callahan-g-to-h
+permalink: /patterns/callahan-g-to-h
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

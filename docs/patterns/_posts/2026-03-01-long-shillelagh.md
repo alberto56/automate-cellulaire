@@ -1,6 +1,7 @@
 ---
 name: long shillelagh
 id: long-shillelagh
+permalink: /patterns/long-shillelagh
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

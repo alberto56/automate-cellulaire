@@ -1,6 +1,7 @@
 ---
 name: de Bruijn graph
 id: de-bruijn-graph
+permalink: /patterns/de-bruijn-graph
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

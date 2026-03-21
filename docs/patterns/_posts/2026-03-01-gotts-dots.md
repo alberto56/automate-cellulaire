@@ -1,6 +1,7 @@
 ---
 name: Gotts dots
 id: gotts-dots
+permalink: /patterns/gotts-dots
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

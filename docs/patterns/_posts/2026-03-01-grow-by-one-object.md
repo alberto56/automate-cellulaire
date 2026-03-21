@@ -1,6 +1,7 @@
 ---
 name: grow-by-one object
 id: grow-by-one-object
+permalink: /patterns/grow-by-one-object
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

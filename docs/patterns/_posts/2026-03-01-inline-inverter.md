@@ -1,6 +1,7 @@
 ---
 name: inline inverter
 id: inline-inverter
+permalink: /patterns/inline-inverter
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: singular flip flop
 id: singular-flip-flop
+permalink: /patterns/singular-flip-flop
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

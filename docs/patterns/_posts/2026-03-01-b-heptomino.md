@@ -1,6 +1,7 @@
 ---
 name: B-heptomino
 id: b-heptomino
+permalink: /patterns/b-heptomino
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

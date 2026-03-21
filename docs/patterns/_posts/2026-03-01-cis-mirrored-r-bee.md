@@ -1,6 +1,7 @@
 ---
 name: cis-mirrored R-bee
 id: cis-mirrored-r-bee
+permalink: /patterns/cis-mirrored-r-bee
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

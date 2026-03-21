@@ -1,6 +1,7 @@
 ---
 name: lone dot agar
 id: lone-dot-agar
+permalink: /patterns/lone-dot-agar
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

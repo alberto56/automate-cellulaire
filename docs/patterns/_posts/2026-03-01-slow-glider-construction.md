@@ -1,6 +1,7 @@
 ---
 name: slow glider construction
 id: slow-glider-construction
+permalink: /patterns/slow-glider-construction
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

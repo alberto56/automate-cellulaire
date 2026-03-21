@@ -1,6 +1,7 @@
 ---
 name: multum in parvo
 id: multum-in-parvo
+permalink: /patterns/multum-in-parvo
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

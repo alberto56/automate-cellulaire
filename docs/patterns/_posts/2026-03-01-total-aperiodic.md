@@ -1,6 +1,7 @@
 ---
 name: total aperiodic
 id: total-aperiodic
+permalink: /patterns/total-aperiodic
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

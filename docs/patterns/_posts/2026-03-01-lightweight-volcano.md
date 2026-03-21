@@ -1,6 +1,7 @@
 ---
 name: lightweight volcano
 id: lightweight-volcano
+permalink: /patterns/lightweight-volcano
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

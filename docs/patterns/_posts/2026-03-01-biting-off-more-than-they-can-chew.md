@@ -1,6 +1,7 @@
 ---
 name: biting off more than they can chew
 id: biting-off-more-than-they-can-chew
+permalink: /patterns/biting-off-more-than-they-can-chew
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: LWSS-LWSS deflection
 id: lwSs-lwss-deflection
+permalink: /patterns/lwSs-lwss-deflection
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

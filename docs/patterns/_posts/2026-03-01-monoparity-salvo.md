@@ -1,6 +1,7 @@
 ---
 name: monoparity salvo
 id: monoparity-salvo
+permalink: /patterns/monoparity-salvo
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

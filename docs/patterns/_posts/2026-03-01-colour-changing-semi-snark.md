@@ -1,6 +1,7 @@
 ---
 name: colour-changing semi-Snark
 id: colour-changing-semi-snark
+permalink: /patterns/colour-changing-semi-snark
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

@@ -1,6 +1,7 @@
 ---
 name: elbow ladder
 id: elbow-ladder
+permalink: /patterns/elbow-ladder
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

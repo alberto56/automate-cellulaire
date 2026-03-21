@@ -1,6 +1,7 @@
 ---
 name: flip-flops
 id: flip-flops
+permalink: /patterns/flip-flops
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com

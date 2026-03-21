@@ -1,6 +1,7 @@
 ---
 name: Game of Life News
 id: game-of-life-news
+permalink: /patterns/game-of-life-news
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
@@ -9,5 +10,5 @@ source:
 description: |
   A blog reporting on new Life discoveries, started
   by Heinrich Koenig in December 2004, currently found at
-  [http://pentadecathlon.com/lifenews/](/patterns/http://pentadecathlon.com/lifenews/).
+  [http://pentadecathlon.com/lifenews/](http://pentadecathlon.com/lifenews/).
 ...

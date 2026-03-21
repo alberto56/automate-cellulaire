@@ -1,6 +1,7 @@
 ---
 name: LW volcano
 id: lw-volcano
+permalink: /patterns/lw-volcano
 source:
   url: https://conwaylife.com/ref/lexicon/lex_home.htm
   desc: Life Lexicon Home Page, Conwaylife.com
