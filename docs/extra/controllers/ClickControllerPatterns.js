@@ -35,7 +35,7 @@ class ClickControllerPatterns extends Controller {
         }
       });
     }
-    xhttp.open("GET", "/api/v1/patterns.json", true);
+    xhttp.open("GET", "api/v1/patterns.json", true);
     xhttp.send();
   }
   initiateClick(col, row) {
