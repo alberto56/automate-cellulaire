@@ -1,0 +1,48 @@
+---
+name: glider synthesis
+id: glider-synthesis
+source:
+  url: https://conwaylife.com/ref/lexicon/lex_home.htm
+  desc: Life Lexicon Home Page, Conwaylife.com
+  license: https://creativecommons.org/licenses/by-sa/3.0/
+  changes: []
+description: |
+  Construction of an object by means of [glider](/patterns/glider)
+  collisions.  It is generally assumed that the gliders should be
+  arranged so that they could come from infinity.  That is, gliders
+  should not have had to pass through one another to achieve the
+  initial arrangement.
+  Glider syntheses for all [still life](/patterns/still-life)s and known [oscillator](/patterns/oscillator)s with
+  at most 14 cells were found by Dave Buckingham.  As of June 2018,
+  this limit has been increased to 18 cells.
+  Perhaps the most interesting glider syntheses are those of
+  [spaceship](/patterns/spaceship)s, because these can be used to create corresponding
+  [gun](/patterns/gun)s and [rake](/patterns/rake)s.  Many of the c/2 spaceships that are based on
+  [standard spaceship](/patterns/standard-spaceship)s have been synthesized, mostly by Mark Niemiec.
+  In June 1998 Stephen Silver found syntheses for some of the
+  [Cordership](/patterns/cordership)s (although it was not until July 1999 that Jason Summers
+  used this to build a Cordership gun).  In May 2000, Noam Elkies
+  suggested that a 2c/5 spaceship found by Tim Coe in May 1996 might be
+  a candidate for glider synthesis.  Initial attempts to construct a
+  synthesis for this spaceship got fairly close, but it was only in
+  March 2003 that Summers and Elkies managed to find a way to perform
+  the crucial last step.  Summers then used the new synthesis to build
+  a c/2 forward rake for the 2c/5 spaceship; this was the first example
+  in Life of a rake which fires spaceships that travel in the same
+  direction as the rake but more slowly.
+  A 3-glider synthesis of a [pentadecathlon](/patterns/pentadecathlon) is shown in the diagram
+  below.  This was found in April 1997 by Heinrich Koenig and came as a
+  surprise, as it was widely assumed that anything using just three
+  gliders would already be known.
+variants:
+- pattern:
+  - '......*...'
+  - '......*.*.'
+  - '......**..'
+  - '..........'
+  - '***.......'
+  - '..*.......'
+  - '.*.....**.'
+  - '........**'
+  - '.......*..'
+...

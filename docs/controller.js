@@ -8,6 +8,6 @@ class Controller {
   init() {
     return this;
   }
-  respondToClick(col, row) {
+  respondToClick(col, row, controller) {
   }
 }

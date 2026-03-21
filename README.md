@@ -10,3 +10,4 @@ Le code est sur GitHub au <https://github.com/alberto56/automate-cellulaire/blob
 ## Exemple d'automate cellulaire
 
 * [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+* [Play game of life](https://playgameoflife.com/lexicon/W-pentomino)

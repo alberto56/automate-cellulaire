@@ -1,10 +1,12 @@
-{% assign cellHeight = site.data.config.model.height %}
-{% assign cellWidth = site.data.config.model.width %}
-{% assign pixelHeight = site.data.config.view.height %}
-{% assign pixelWidth = site.data.config.view.width %}
-{% assign model = site.data.config.model.class %}
-{% assign views = site.data.config.view.classes %}
-{% assign controllers = page.controller.classes | default: site.data.config.controller.classes %}
+{% assign model = page.model %}
+{% assign cellHeight = page.model.height %}
+{% assign cellWidth = page.model.width %}
+{% assign views = page.views %}
+{% assign controllers = page.controllers %}
+{% capture html %}
+{% if views %}{% else %}
+  {% assign err = 'Error: no view defined.' %}
+{% endif %}
 <!doctype html>
 <html>
   <head>
@@ -15,6 +17,7 @@
     <p>Ce projet utilise une grille de {{ cellWidth }} par {{ cellHeight }}.</p>
     <p><a href="https://github.com/alberto56/automate-cellulaire">Voir le code source sur GitHub</a></p>
     <canvas id="myCanvas" width="{{ pixelWidth }}" height="{{ pixelHeight }}"></canvas>
+    <div id="toolbox"></div>
     <p id="stats">Cellules vivantes : <strong id="alive-count">0</strong> / {{ cellWidth | times: cellHeight }}</p>
     <canvas id="chartCanvas" width="{{ pixelWidth }}" height="150"></canvas>
     <h3>Other games</h3>
@@ -26,35 +29,33 @@
     {% endfor %}
     </ul>
 
-    <script src="model.js"></script>
-    <script src="view.js"></script>
-    <script src="controller.js"></script>
-    <script src="extra/models/{{ model }}.js"></script>
+    <script src="model.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="view.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="controller.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="extra/models/{{ model.class }}.js?token={{ site.time | date: '%s' }}"></script>
     <script>
-      const model = (new {{ model }}(
-        {{ cellHeight }},
-        {{ cellWidth }},
+      const model = (new {{ model.class }}(
+        {{ model | jsonify }}
       )).init();
     </script>
     <script>
       let views = [];
     </script>
     {% for view in views %}
-    <script src="extra/views/{{ view }}.js"></script>
+    <script src="extra/views/{{ view.class }}.js?token={{ site.time | date: '%s' }}"></script>
     <script>
-      views.push((new {{ view }}(
-        {{ pixelWidth }},
-        {{ pixelHeight }},
-        'myCanvas',
+      let view = (new {{ view.class }}(
         model,
-      )).init());
+        {{ view | jsonify }}
+      )).init()
+      views.push(view);
     </script>
     {% endfor %}
     <script>
       let controllers = [];
     </script>
     {% for controller in controllers %}
-    <script src="extra/controllers/{{ controller.class }}.js"></script>
+    <script src="extra/controllers/{{ controller.class }}.js?token={{ site.time | date: '%s' }}"></script>
     <script>
       controllers.push((new {{ controller.class }}(model, views, controllers, {{ controller | jsonify }})).init());
     </script>
@@ -115,3 +116,9 @@
     </script>
   </body>
 </html>
+{% endcapture %}
+{% if err %}
+  {{ err }}
+{% else %}
+  {{ html }}
+{% endif %}

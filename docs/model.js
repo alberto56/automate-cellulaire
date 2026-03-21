@@ -7,7 +7,9 @@
  * Run (new Model(10, 10)).selfTest() for a simple test.
  */
 class Model {
-  constructor(cols, rows) {
+  constructor(config) {
+    const cols = config.width;
+    const rows = config.height;
     if (!cols || !rows) {
       throw new Error("Model constructor requires cols and rows, try new Model(10, 10)");
     }

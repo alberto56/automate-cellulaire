@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+    <style>
+      .cell, .cell-fill {
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+        display: inline-block;
+      }
+      .cell-fill {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    {% for obj in site.categories.patterns %}
+      <h2>{{ obj.title }}</h2>
+      {% for variant in obj.variants %}
+        <div>
+        {% for line in variant.pattern %}
+          <div>
+          {% assign letters = line | split: "" %}
+          {% for letter in letters %}
+            <div class="cell{% if letter == '.' %}{% else %}-fill{% endif %}"></div>
+          {% endfor %}
+          </div>
+        {% endfor %}
+        </div>
+        <p>{{ variant.description }}</p>
+      {% endfor %}
+    {% endfor %}
+  </body>
+</html>

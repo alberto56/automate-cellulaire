@@ -27,7 +27,6 @@ class Butterflies extends Controller {
     }
 
     this.model.set(col, row, 'alive', true);
-    console.log('setting the direction to a random one');
     const dir = this.randomDirection();
     this.model.set(col, row, 'direction', dir);
     this.model.set(col, row, 'r', 0);

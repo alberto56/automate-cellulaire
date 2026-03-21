@@ -1,0 +1,13 @@
+---
+name: evolution
+id: evolution
+source:
+  url: https://conwaylife.com/ref/lexicon/lex_home.htm
+  desc: Life Lexicon Home Page, Conwaylife.com
+  license: https://creativecommons.org/licenses/by-sa/3.0/
+  changes: []
+description: |
+  The process or result of running one or more generations of
+  an object.  For example, a row of 10 cells evolves into a
+  [pentadecathlon](/patterns/pentadecathlon).
+...

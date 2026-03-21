@@ -6,20 +6,20 @@ class ClickController extends Controller {
   // const ctx = canvas.getContext('2d');
 
     canvas.addEventListener('click', function(event) {
-        const mousePos = that.getMousePosition(canvas, event);
-        // You can now use these coordinates for collision detection or drawing
-        that.views.forEach(view => {
-          const cellCoords = view.coordsToCell(mousePos.x, mousePos.y);
-          that.respondToClick(cellCoords.col, cellCoords.row);
-        });
+      const mousePos = that.getMousePosition(canvas, event);
+      // You can now use these coordinates for collision detection or drawing
+      that.views.forEach(view => {
+        const cellCoords = view.coordsToCell(mousePos.x, mousePos.y);
+        that.initiateClick(cellCoords.col, cellCoords.row);
+      });
     }, false);
+    return this;
   }
-  respondToClick(col, row) {
-    console.log(`Clicked on cell: Col: ${col}, Row: ${row}`);
+  initiateClick(col, row) {
     console.log(this.controllers);
     this.controllers.forEach(controller => {
       if (typeof controller !== 'undefined') {
-        controller.respondToClick(col, row);
+        controller.respondToClick(col, row, this);
       }
     });
   }

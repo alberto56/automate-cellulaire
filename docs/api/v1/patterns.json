@@ -1,0 +1,14 @@
+---
+---
+{% capture patterns %}
+  {% for obj in site.categories.patterns %}
+    {% if forloop.first %}{% else %},{% endif %}
+    {
+      "name": {{ obj.name | jsonify }},
+      "id": {{ obj.id | jsonify }},
+      "tags": {{ obj.tags | jsonify }},
+      "description": {{ obj.description | jsonify }},
+      "variants": {{ obj.variants | jsonify }}
+    }
+  {% endfor %}
+{% endcapture %}{"patterns": [{{ patterns }}]}

@@ -1,0 +1,38 @@
+---
+name: cellular automaton
+id: cellular-automaton
+source:
+  url: https://conwaylife.com/ref/lexicon/lex_home.htm
+  desc: Life Lexicon Home Page, Conwaylife.com
+  license: https://creativecommons.org/licenses/by-sa/3.0/
+  changes: []
+description: |
+  A certain class of mathematical objects of which
+  [Life](/patterns/life) is an example.  A cellular automaton consists of a number of
+  things.  First there is a positive integer n which is the dimension
+  of the cellular automaton.  Then there is a finite set of states S,
+  with at least two members.  A state for the whole cellular automaton
+  is obtained by assigning an element of S to each point of the
+  n-dimensional lattice Z^n (where Z is the set of all integers). The
+  points of Z^n are usually called cells.  The cellular automaton also
+  has the concept of a neighbourhood.  The neighbourhood N of the
+  origin is some finite (nonempty) subset of Z^n.  The neighbourhood of
+  any other cell is obtained in the obvious way by translating that of
+  the origin.  Finally there is a transition rule, which is a function
+  from S^N to S (that is to say, for each possible state of the
+  neighbourhood the transition rule specifies some cell state). The
+  state of the cellular automaton evolves in discrete time, with the
+  state of each cell at time t+1 being determined by the state of its
+  neighbourhood at time t, in accordance with the transition rule.
+  There are some variations on the above definition.  It is common to
+  require that there be a quiescent state, that is, a state such that
+  if the whole universe is in that state at generation 0 then it will
+  remain so in generation 1.  (In Life the OFF state is quiescent, but
+  the ON state is not.)  Other variations allow spaces other than Z^n,
+  neighbourhoods that vary over space and/or time, probabilistic or
+  other non-deterministic transition rules, etc.
+  It is common for the neighbourhood of a cell to be the 3x    - "..."x3
+  (hyper)cube centred on that cell.  (This includes those cases where
+  the neighbourhood might more naturally be thought of as a proper
+  subset of this cube.)   This is known as the Moore neighbourhood.
+...

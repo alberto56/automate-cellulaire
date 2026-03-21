@@ -1,11 +1,15 @@
 class View {
-  constructor(canvasWidth, canvasHeight, canvasId, model) {
-    this.canvasWidth = canvasWidth;
-    this.canvasHeight = canvasHeight;
-    this.canvasId = canvasId;
-    this.canvas = document.getElementById(canvasId);
+  constructor(model, config) {
+    this.config = config;
+    this.canvasId = this.config.canvas;
+    this.canvasWidth = this.config.width;
+    this.canvasHeight = this.config.height;
+    this.canvas = document.getElementById(this.canvasId);
+    this.canvas.height = this.canvasHeight;
+    this.canvas.width = this.canvasWidth;
     if (!this.canvas) {
-      throw new Error(`No canvas with id ${canvasId} found`);
+      const canvasIdJson = JSON.stringify(canvasId);
+      throw new Error(`No canvas with id ${canvasIdJson} found`);
     }
     this.model = model;
     this.model.subscribe(this);
