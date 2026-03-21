@@ -1,7 +1,7 @@
 Automate cellulaire
 -----
 
-Un automate cellulaire disponible au <https://alberto56.github.io/automate-cellulaire/> et utilisant le pattern MVC (modèle - vue - contrôleur).
+Un automate cellulaire disponible au <https://automata.dcycleproject.org/> et utilisant le pattern MVC (modèle - vue - contrôleur).
 
 Le contrôleur par défaut transforme des cellules graduellement en couleur grise.
 
