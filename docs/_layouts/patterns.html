@@ -75,14 +75,14 @@
         return this.fromJson().join('').replaceAll('.', '0').replaceAll('*', '1').replace(/0+$/, '')
       }
       encode() {
-        return parseInt(this.binary(), 2).toString(36)
+        return (new Encodings()).fromArray(this.fromJson(), '.').toCGV1();
       }
     }
     const patterns = new PatternsPage();
     const sections = patterns.encodingSections();
     sections.forEach(section => {
       const cols = section.numColumns();
-      section.setCgCode('cg-v1-' + cols + '-' + section.encode());
+      section.setCgCode(section.encode());
     });
   </script>
 </html>
