@@ -27,9 +27,62 @@
           {% endfor %}
           </div>
         {% endfor %}
+          <div class="encode">
+            <div class="encode-json">
+              <code>
+                {{ variant.pattern | jsonify }}
+              </code>
+            </div>
+            <div class="encode-cg-v1">
+              <code>
+                cg-v1-...
+              </code>
+            </div>
+          </div>
         </div>
         <p>{{ variant.description }}</p>
       {% endfor %}
     {% endfor %}
   </body>
+  <script src="/extra/encodings/encodings.js?token={{ site.time | date: '%s' }}"></script>
+  <script>
+    class PatternsPage {
+      encodingSections() {
+        let ret = [];
+        const sections = document.querySelectorAll('.encode');
+        sections.forEach(section => {
+          ret.push(new EncodingSection(section));
+        });
+        return ret;
+      }
+    }
+    class EncodingSection {
+      constructor(section) {
+        this.section = section;
+      }
+      numColumns() {
+        return this.fromJson()[0].length;
+      }
+      fromJson() {
+        const jsonCodeElem = this.section.querySelector('.encode-json code');
+        return JSON.parse(jsonCodeElem.textContent);
+      }
+      setCgCode(code) {
+        const cgCodeElem = this.section.querySelector('.encode-cg-v1 code');
+        cgCodeElem.textContent = code;
+      }
+      binary() {
+        return this.fromJson().join('').replaceAll('.', '0').replaceAll('*', '1').replace(/0+$/, '')
+      }
+      encode() {
+        return parseInt(this.binary(), 2).toString(36)
+      }
+    }
+    const patterns = new PatternsPage();
+    const sections = patterns.encodingSections();
+    sections.forEach(section => {
+      const cols = section.numColumns();
+      section.setCgCode('cg-v1-' + cols + '-' + section.encode());
+    });
+  </script>
 </html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Automate cellulaire builder</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Automate cellulaire builder</h1>
+    <h2>Build</h2>
+    <canvas id="build"></canvas>
+    <h2>Test</h2>
+    <canvas id="test"></canvas>
+    <h2>Share</h2>
+    <p>URL: </p>
+    <p>JSON: </p>
+    <code>
+
+    </code>
+    <script src="model.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="view.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="controller.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="extra/models/BasicModel.js?token={{ site.time | date: '%s' }}"></script>
+    <script>
+      const buildModel = (new BasicModel(
+        { width: {{ page.buildWidth }}, height: {{ page.buildHeight }} }
+      )).init();
+      const testModel = (new BasicModel(
+        { width: {{ page.testWidth }}, height: {{ page.testHeight }} }
+      )).init();
+    </script>
+    <script>
+      let buildViews = [];
+      let testViews = [];
+    </script>
+    <script src="extra/views/SquarePixelsWithBorder.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="extra/controllers/Builder.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="extra/controllers/BuilderTester.js?token={{ site.time | date: '%s' }}"></script>
+    <script>
+      buildViews.push(new SquarePixelsWithBorder(
+        buildModel,
+        { width: {{ page.buildPixelWidth }}, height: {{ page.buildPixelHeight }}, canvas: 'build' },
+      ).init())
+      testViews.push(new SquarePixelsWithBorder(
+        testModel,
+        { width: {{ page.testPixelWidth }}, height: {{ page.testPixelHeight }}, canvas: 'test' },
+      ).init())
+    </script>
+    <script>
+      let buildControllers = [];
+      let testControllers = [];
+    </script>
+    <script>
+      buildControllers.push(new Builder(
+        buildModel,
+        buildViews,
+        [],
+        {
+          alive: {
+            r: 0, g: 0, b: 0,
+          },
+          dead: {
+            r: 255, g: 255, b: 255,
+          },
+        },
+      ).init())
+      testControllers.push(new BuilderTester(
+        testModel,
+        testViews,
+        [],
+        {
+          alive: {
+            r: 0, g: 0, b: 0,
+          },
+          dead: {
+            r: 255, g: 255, b: 255,
+          },
+        },
+      ).init())
+    </script>
+  </body>
+</html>
