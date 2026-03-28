@@ -106,6 +106,18 @@ class Model {
   colRowIsOutOfBounds(col, row) {
     return col < 0 || col >= this.cols || row < 0 || row >= this.rows || col === undefined || row === undefined;
   }
+  copyFromModel(model) {
+    for (let col = 0; col < this.cols; col++) {
+      for (let row = 0; row < this.rows; row++) {
+        const cellData = model.getAll(col, row);
+        for (const property in cellData) {
+          if (property !== 'col' && property !== 'row') {
+            this.set(col, row, property, cellData[property]);
+          }
+        }
+      }
+    }
+  }
   assertAll(col, row, expectedValue) {
     const actualValue = JSON.stringify(this.getAll(col, row));
     expectedValue = JSON.stringify(expectedValue);

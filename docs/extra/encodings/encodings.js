@@ -36,6 +36,12 @@ class Grid {
     this.off = off;
     this.d = debug;
   }
+  height() {
+    return this.arr.length;
+  }
+  width() {
+    return this.cols();
+  }
   toJson(off = '0', on = '1') {
     return JSON.stringify(this.toArray(off, on));
   }

@@ -6,7 +6,7 @@ class FromHash extends Controller {
         const matrix = new Encodings().fromCGV1(hash).toArrayOfArrays();
         this.controllers.forEach(controller => {
           if (controller instanceof Builder) {
-            controller.setMatrixAlive(matrix, 0, 0);
+            controller.setMatrixAliveCenter(matrix, 0, 0);
           }
         });
         console.log('Decoded encoding from hash:', matrix);

@@ -27,6 +27,11 @@ class Builder extends Controller {
     const currentState = this.model.get(col, row, 'alive');
     this.setAlive(col, row, !currentState);
   }
+  setMatrixAliveCenter(matrix) {
+    const clickCol = Math.floor(this.model.cols / 2 - matrix[0].length / 2);
+    const clickRow = Math.floor(this.model.rows / 2 - matrix.length / 2);
+    this.setMatrixAlive(matrix, clickCol, clickRow);
+  }
   setMatrixAlive(rows, clickCol, clickRow) {
     if (!this.matrixFits(rows, clickCol, clickRow)) {
       alert('Matrix does not fit in the grid at the specified position.');

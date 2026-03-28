@@ -3,8 +3,8 @@ layout: automata
 permalink: /
 title: Conway's Game Of Life
 model:
-  height: 30
-  width: 30
+  height: 100
+  width: 100
   class: "BasicModel"
 views:
 - class: "SquarePixelsWithBorder"

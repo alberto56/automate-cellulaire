@@ -9,6 +9,7 @@
     <h2>Build</h2>
     <canvas id="build"></canvas>
     <h2>Test</h2>
+    <div id="mycontrols"></div>
     <canvas id="test"></canvas>
     <h2>Share</h2>
     <p>URL: </p>
@@ -35,9 +36,11 @@
     <script src="extra/views/SquarePixelsWithBorder.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/encodings/encodings.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/FromHash.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="extra/controls/Controls.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/Builder.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/ClickController.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/BuilderTester.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="extra/controllers/GameOfLife6.js?token={{ site.time | date: '%s' }}"></script>
     <script>
       buildViews.push(new SquarePixelsWithBorder(
         buildModel,
@@ -90,7 +93,14 @@
           dead: {
             r: 255, g: 255, b: 255,
           },
+          controls: new Controls('mycontrols'),
+          model: buildModel,
         },
+      ).init())
+      testControllers.push(new GameOfLife6(
+        testModel,
+        testViews,
+        [],
       ).init())
     </script>
   </body>
