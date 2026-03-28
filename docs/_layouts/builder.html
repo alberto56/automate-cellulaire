@@ -33,6 +33,7 @@
       let testViews = [];
     </script>
     <script src="extra/views/SquarePixelsWithBorder.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="extra/controllers/FromHash.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/Builder.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/BuilderTester.js?token={{ site.time | date: '%s' }}"></script>
     <script>
@@ -62,6 +63,11 @@
             r: 255, g: 255, b: 255,
           },
         },
+      ).init())
+      buildControllers.push(new FromHash(
+        buildModel,
+        buildViews,
+        [],
       ).init())
       testControllers.push(new BuilderTester(
         testModel,

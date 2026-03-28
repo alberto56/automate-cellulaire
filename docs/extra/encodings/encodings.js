@@ -29,6 +29,13 @@ class Grid {
     });
     return ret;
   }
+  toArrayOfArrays(off = '0', on = '1') {
+    let ret = [];
+    this.arr.forEach(row => {
+      ret.push(this.processArrayRow(row, off, on).split(''));
+    });
+    return ret;
+  }
   processArrayRow(row, off, on) {
     return row.split('').map(c => c === this.off ? off : on).join('');
   }

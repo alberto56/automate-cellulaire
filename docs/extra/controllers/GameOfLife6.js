@@ -29,7 +29,16 @@ class GameOfLife6 extends Controller {
     return ret;
   }
 
+  setFromCGV1(col, row, cgv1) {
+    this.setMatrixAlive(
+      (new Encodings()).fromCGV1(cgv1).toArrayOfArrays(),
+      col,
+      row,
+    )
+  }
+
   setMatrixAlive(rows, clickCol, clickRow) {
+    console.log(rows);
     const that = this;
 
     let currentCol = clickCol;

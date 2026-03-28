@@ -4,8 +4,8 @@
     <title>This is the title of the webpage!</title>
     <style>
       .cell, .cell-fill {
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
         border: 1px solid black;
         display: inline-block;
       }
@@ -40,7 +40,7 @@
             </div>
           </div>
         </div>
-        <p>{{ variant.description }}</p>
+        <p>{{ variant.description | markdownify }}</p>
       {% endfor %}
     {% endfor %}
   </body>
