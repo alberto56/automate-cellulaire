@@ -2,7 +2,7 @@ class GameOfLife6 extends Controller {
   init() {
     for (let col = 0; col < this.model.cols; col++) {
       for (let row = 0; row < this.model.rows; row++) {
-        if (Math.random() < this.config.initialAliveProbability) {
+        if (Math.random() < this.config?.initialAliveProbability) {
           this.setAlive(col, row, true);
         } else {
           this.setAlive(col, row, false);
