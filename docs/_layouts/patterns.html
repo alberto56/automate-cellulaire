@@ -37,6 +37,7 @@
               <code>
                 cg-v1-...
               </code>
+              <a class="builder-link" href="#">Builder</a>
             </div>
           </div>
         </div>
@@ -70,6 +71,8 @@
       setCgCode(code) {
         const cgCodeElem = this.section.querySelector('.encode-cg-v1 code');
         cgCodeElem.textContent = code;
+        const builder = this.section.querySelector('.builder-link');
+        builder.href = '/builder#' + code;
       }
       binary() {
         return this.fromJson().join('').replaceAll('.', '0').replaceAll('*', '1').replace(/0+$/, '')

@@ -9,10 +9,24 @@ class Encodings {
     return new ArrayGrid(arr, off, this.debug);
   }
   fromCGV1(cgv1) {
+    return new (this.cgv1class(cgv1))(cgv1, this.debug);
+  }
+  fromCGV1base36(cgv1) {
     return new CGV1GridBin2Base36(cgv1, this.debug);
   }
   fromCGV1grp(cgv1) {
     return new CGV1GridGrp(cgv1, this.debug);
+  }
+  cgv1class(cgv1) {
+    const parts = cgv1.split('-');
+    if (parts.length === 5 && parts[0] === 'cg' && parts[1] === 'v1') {
+      if (parts[2] === 'bin2base36') {
+        return CGV1GridBin2Base36;
+      } else if (parts[2] === 'grp') {
+        return CGV1GridGrp;
+      }
+    }
+    throw new Error('Invalid CGV1 format ' + cgv1);
   }
 }
 
@@ -48,6 +62,16 @@ class Grid {
     }
   }
   toCGV1() {
+    const candidates = [this.toCGV1base36(), this.toCGV1grp()];
+    let best = candidates[0];
+    candidates.forEach(candidate => {
+      if (candidate.length < best.length) {
+        best = candidate;
+      }
+    });
+    return best;
+  }
+  toCGV1base36() {
     const binary = this.toBinary();
     this.debug(`Binary representation: ${binary}`);
     const base36 = BinaryParser.binTo36(binary);
@@ -270,7 +294,28 @@ class EncodingsTest {
           '0000000001100001101100000000011000011011',
         ],
         off: '0',
-      }
+      },
+      {
+        a: [
+          '0000000000001111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+          '1111111111111111111111111111111111111111',
+        ],
+        off: '0',
+      },
     ].forEach(data => {
       const arr = data.a;
       const off = data.off;

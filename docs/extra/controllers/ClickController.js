@@ -1,7 +1,7 @@
 class ClickController extends Controller {
   init() {
     const that = this;
-    const canvas = document.getElementById('myCanvas'); // Replace with your canvas ID
+    const canvas = document.getElementById(this?.config?.canvas || 'myCanvas'); // Replace with your canvas ID
   // Ensure you have a 2D context if you plan to draw
   // const ctx = canvas.getContext('2d');
 
@@ -16,7 +16,6 @@ class ClickController extends Controller {
     return this;
   }
   initiateClick(col, row) {
-    console.log(this.controllers);
     this.controllers.forEach(controller => {
       if (typeof controller !== 'undefined') {
         controller.respondToClick(col, row, this);
@@ -24,14 +23,14 @@ class ClickController extends Controller {
     });
   }
   getMousePosition(canvas, event) {
-      // Get the position and size of the canvas relative to the viewport
-      const rect = canvas.getBoundingClientRect();
+    // Get the position and size of the canvas relative to the viewport
+    const rect = canvas.getBoundingClientRect();
 
-      // Calculate the X and Y coordinates relative to the canvas
-      const x = event.clientX - rect.left;
-      const y = event.clientY - rect.top;
+    // Calculate the X and Y coordinates relative to the canvas
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
 
-      return { x, y };
+    return { x, y };
   }
 
 }

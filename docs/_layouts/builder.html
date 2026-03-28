@@ -33,8 +33,10 @@
       let testViews = [];
     </script>
     <script src="extra/views/SquarePixelsWithBorder.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="extra/encodings/encodings.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/FromHash.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/Builder.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="extra/controllers/ClickController.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/BuilderTester.js?token={{ site.time | date: '%s' }}"></script>
     <script>
       buildViews.push(new SquarePixelsWithBorder(
@@ -67,7 +69,15 @@
       buildControllers.push(new FromHash(
         buildModel,
         buildViews,
-        [],
+        buildControllers,
+      ).init())
+      buildControllers.push(new ClickController(
+        buildModel,
+        buildViews,
+        buildControllers,
+        {
+          canvas: 'build',
+        },
       ).init())
       testControllers.push(new BuilderTester(
         testModel,
