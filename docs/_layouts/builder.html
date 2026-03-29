@@ -12,8 +12,10 @@
     <div id="mycontrols"></div>
     <canvas id="test"></canvas>
     <h2>Share</h2>
-    <p>URL: </p>
-    <p>JSON: </p>
+    <p>URL:</p>
+    <code id="share-url"></code>
+    <p>JSON:</p>
+    <code id="share-json"></code>
     <code>
 
     </code>
@@ -41,10 +43,18 @@
     <script src="extra/controllers/ClickController.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/BuilderTester.js?token={{ site.time | date: '%s' }}"></script>
     <script src="extra/controllers/GameOfLife6.js?token={{ site.time | date: '%s' }}"></script>
+    <script src="extra/views/Share.js?token={{ site.time | date: '%s' }}"></script>
     <script>
       buildViews.push(new SquarePixelsWithBorder(
         buildModel,
         { width: {{ page.buildPixelWidth }}, height: {{ page.buildPixelHeight }}, canvas: 'build' },
+      ).init())
+      buildViews.push(new Share(
+        buildModel,
+        {
+          urlElem: document.getElementById('share-url'),
+          jsonElem: document.getElementById('share-json'),
+        },
       ).init())
       testViews.push(new SquarePixelsWithBorder(
         testModel,
@@ -101,6 +111,20 @@
         testModel,
         testViews,
         [],
+        {
+          initialAliveProbability: 0,
+          speed: 30,
+          alive: {
+            r: 0,
+            g: 0,
+            b: 0
+          },
+          dead: {
+            r: 255,
+            g: 255,
+            b: 255,
+          },
+        }
       ).init())
     </script>
   </body>

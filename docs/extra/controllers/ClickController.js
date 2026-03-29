@@ -9,8 +9,10 @@ class ClickController extends Controller {
       const mousePos = that.getMousePosition(canvas, event);
       // You can now use these coordinates for collision detection or drawing
       that.views.forEach(view => {
-        const cellCoords = view.coordsToCell(mousePos.x, mousePos.y);
-        that.initiateClick(cellCoords.col, cellCoords.row);
+        if (typeof view !== 'undefined') {
+          const cellCoords = view.coordsToCell(mousePos.x, mousePos.y);
+          that.initiateClick(cellCoords.col, cellCoords.row);
+        }
       });
     }, false);
     return this;

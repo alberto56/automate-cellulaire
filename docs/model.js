@@ -97,6 +97,18 @@ class Model {
     }
     return this.data[col][row][property];
   }
+  toArray(activeCallback, on, off) {
+    let ret = [];
+    const that = this;
+    this.data.forEach((rowData, col) => {
+      let rowItems = [];
+      rowData.forEach((cell, row) => {
+        rowItems.push(activeCallback(cell) ? on : off);
+      });
+      ret.push(rowItems);
+    });
+    return ret;
+  }
   getAll(col, row) {
     if (this.colRowIsOutOfBounds(col, row)) {
       return {};

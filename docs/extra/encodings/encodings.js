@@ -8,6 +8,17 @@ class Encodings {
   fromArray(arr, off) {
     return new ArrayGrid(arr, off, this.debug);
   }
+  fromArrayOfArrays(arr, off) {
+    let arr2 = [];
+    arr.forEach(row => {
+      arr2.push(row.join(''));
+    });
+    return new ArrayGrid(arr2, off, this.debug);
+  }
+  fromModel(model, activeCallback) {
+    const arr = model.toArray(activeCallback);
+    return new ArrayGrid(arr, '0', this.debug);
+  }
   fromCGV1(cgv1) {
     return new (this.cgv1class(cgv1))(cgv1, this.debug);
   }
@@ -35,6 +46,45 @@ class Grid {
     this.arr = arr;
     this.off = off;
     this.d = debug;
+  }
+  trim() {
+    const untrimmed = this.toArray('0', '1');
+    let trimFromTop = 0;
+    let trimFromBottom = 0;
+    let trimFromLeft = 0;
+    let trimFromRight = 0;
+    for (let row of untrimmed) {
+      if (row === this.off.repeat(row.length)) {
+        trimFromTop++;
+      } else {
+        break;
+      }
+    }
+    for (let row of untrimmed.slice().reverse()) {
+      if (row === this.off.repeat(row.length)) {
+        trimFromBottom++;
+      } else {
+        break;
+      }
+    }
+    for (let col = 0; col < untrimmed[0].length; col++) {
+      if (untrimmed.every(row => row[col] === this.off)) {
+        trimFromLeft++;
+      } else {
+        break;
+      }
+    }
+    for (let col = untrimmed[0].length - 1; col >= 0; col--) {
+      if (untrimmed.every(row => row[col] === this.off)) {
+        trimFromRight++;
+      } else {
+        break;
+      }
+    }
+    const trimmed = untrimmed
+      .slice(trimFromTop, untrimmed.length - trimFromBottom)
+      .map(row => row.slice(trimFromLeft, row.length - trimFromRight));
+    return new ArrayGrid(trimmed, this.off, this.d);
   }
   height() {
     return this.arr.length;
@@ -105,6 +155,9 @@ class Grid {
     return '1' + this.toArray('0', '1').join('').replace(/0+$/, '');
   }
   cols() {
+    if (!this.toArray('0', '1').length) {
+      return 0;
+    }
     return this.toArray('0', '1')[0].length;
   }
 }
