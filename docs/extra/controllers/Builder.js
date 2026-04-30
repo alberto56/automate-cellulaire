@@ -52,9 +52,9 @@ class Builder extends Controller {
     });
   }
   setAlive(col, row, alive) {
-    this.model.set(col, row, 'alive', alive);
-    this.model.set(col, row, 'r', alive ? this.config.alive.r : this.config.dead.r);
-    this.model.set(col, row, 'g', alive ? this.config.alive.g : this.config.dead.g);
+    this.model.setWithoutBroadcasting(col, row, 'alive', alive);
+    this.model.setWithoutBroadcasting(col, row, 'r', alive ? this.config.alive.r : this.config.dead.r);
+    this.model.setWithoutBroadcasting(col, row, 'g', alive ? this.config.alive.g : this.config.dead.g);
     this.model.set(col, row, 'b', alive ? this.config.alive.b : this.config.dead.b);
   }
 }

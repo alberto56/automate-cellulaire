@@ -82,14 +82,25 @@ class Model {
     });
     console.log("All tests passed!");
   }
-  set(col, row, property, value) {
+  /**
+   * @returns TRUE if results in a change to the cell.s
+   */
+  setWithoutBroadcasting(col, row, property, value) {
     if (this.colRowIsOutOfBounds(col, row)) {
-      return;
+      return false;
+    }
+    if (this.data[col][row][property] == value) {
+      return false;
     }
     this.data[col][row][property] = value;
-    this.views.forEach((view) => {
-      view.update(col, row, property, value);
-    });
+    return true;
+  }
+  set(col, row, property, value) {
+    if(this.setWithoutBroadcasting(col, row, property, value)) {
+      this.views.forEach((view) => {
+        view.update(col, row, property, value);
+      });
+    }
   }
   get(col, row, property, defaultIfOutOfBounds = null) {
     if (this.colRowIsOutOfBounds(col, row)) {
